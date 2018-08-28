@@ -23,7 +23,7 @@ github_username: mtennekes
 
 # Build settings
 markdown: kramdown
-theme: minimal
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
