@@ -22,7 +22,7 @@ Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., 
 Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.5, Some Quality Aspects and Future Prospects for the Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.5_Final.pdf)
 
 Tennekes, M. (2018) tmap: Thematic Maps in R, Journal of Statistical Software, 84(6), 1-39 [(paper)](https://doi.org/10.18637/jss.v084.i06)
-	
+
 ## 2017
 	
 Daas, P., Abbott, O., Alexandru, C., Bisioti, E., Chavdarov, V., Debusschere, M., Horvat, V., Museux, J-M., Reis, F., Ilves, M., Langsrud, O., Maslankowski, J., Portugal, A., Puts, M., Tennekes, M., Sanguiao, L., Six, M., Wu, D. (2017) Results of Workshop on: Important topics in the area of methodology, quality and IT when using big data for official statistics. Workpackage 8, ESSnet Big Data, Heerlen, The Netherlands. Version 19 June 2017. [(report)](downloads/publications/WP8_2017_04_25-26_Heerlen_Workshop_Report.pdf)
