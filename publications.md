@@ -8,15 +8,28 @@ permalink: /publications/
 
 ## 2018
 
+Meulemans, W., Tennekes, M. (2018) Assessing Dot-Map Aggregations. Poster paper to be presented at the IEEE VisWeek 2018. Berlin, Germany. [(paper)](downloads/publications/dotmapaggregation-visposter-2018.pdf)
+
+Tennekes, M. (2018) tmap: Thematic Maps. [(R package version 2.1-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)
+
+Tennekes, M. (2018) tmaptools: Thematic Maps Tools. [(R package version 2.0-1)](http://cran.r-project.org/package=tmaptools) [(project home)](https://github.com/mtennekes/tmaptools)
+
+Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.3, Proposed Elements for a Methodological Framework for the 
+Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.3_Final.pdf)
+
+Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.4, Some IT elements for the use of mobile phone data in the production of official statistics, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.4_Final.pdf)
+
+Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.5, Some Quality Aspects and Future Prospects for the Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.5_Final.pdf)
+
 Tennekes, M. (2018) tmap: Thematic Maps in R, Journal of Statistical Software, 84(6), 1-39 [(paper)](https://doi.org/10.18637/jss.v084.i06)
 	
 ## 2017
 	
+Daas, P., Abbott, O., Alexandru, C., Bisioti, E., Chavdarov, V., Debusschere, M., Horvat, V., Museux, J-M., Reis, F., Ilves, M., Langsrud, O., Maslankowski, J., Portugal, A., Puts, M., Tennekes, M., Sanguiao, L., Six, M., Wu, D. (2017) Results of Workshop on: Important topics in the area of methodology, quality and IT when using big data for official statistics. Workpackage 8, ESSnet Big Data, Heerlen, The Netherlands. Version 19 June 2017. [(report)](downloads/publications/WP8_2017_04_25-26_Heerlen_Workshop_Report.pdf)
+
 Tennekes, M. Exploring and presenting maps with **tmap**. Presentation for the R User Conference (useR) 2017, Brussels, Belgium. [(abstract)](downloads/publications/abstract_tmap.pdf) [(presentation)](downloads/presentations/tmap_user2017.pdf)
 
 Tennekes, M., Offermans, M. Heerschap, N. (2017) Determining an optimal time window for roaming data for tourism statistics. Paper presented at the NetMob 2017 conference, Milan, Italy. [(paper)](downloads/publications/paper_netmob2017.pdf) [(poster)](downloads/presentations/Poster_netmob2017_v2.pdf)
-
-Tennekes, M. (2017) tmap: Thematic Maps. [(R package version 2.1-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)
 
 Tennekes, M., Jonge, E. de (2017) The compositional dot map: a visualization of spatial data. Paper presented at the 2017 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(extended abstract)](downloads/publications/The_compositional_dot_map_NTTS2017.pdf) [(presentation)](downloads/presentations/dotmap_NTTS.pdf)
 
@@ -44,18 +57,18 @@ Tennekes, M. (2015) High Frequency Road Sensor Data for Official Statistics. Pap
 																																											Puts, M., Tennekes, M., Daas, P. (2014) Using Road Sensor Data for Official Statistics. Towards a Big Data Methodology. Presentation for the Strata + Hadoop World, organized by O'Reilly and Cloudera, Barcelona, Spain. [(abstract)](downloads/publications/Strata2014_RoadSensors_abstract.pdf) [(presentation)](downloads/presentations/Strata2014_RoadSensors.pdf)
 						
 ## 2014
-																																											Tennekes, M. Jonge, E. de (2014) Tree Colors: Color Schemes for Tree-Structured Data. IEEE Transactions on Visualization and Computer Graphics 20 (12), 2072 - 2081. (downloads/publications/TreeColors_manuscript.pdf) [(video preview)](downloads/presentations/TreeColors_video_preview.mp4) [(fast forward presentation)](downloads/presentations/TreeColors_ff_pres.mp4) [(presentation)](downloads/presentations/TreeColors_pres.pdf)
+
+Tennekes, M. Jonge, E. de (2014) Tree Colors: Color Schemes for Tree-Structured Data. IEEE Transactions on Visualization and Computer Graphics 20 (12), 2072 - 2081. (downloads/publications/TreeColors_manuscript.pdf) [(video preview)](downloads/presentations/TreeColors_video_preview.mp4) [(fast forward presentation)](downloads/presentations/TreeColors_ff_pres.mp4) [(presentation)](downloads/presentations/TreeColors_pres.pdf)
 
 Offermans, M., Tennekes, M. (2014) Mobile Phone Metadata: A New Source for Official Statistics. Presentation for the 2014 Joint Statistical Meeting (JSM), Boston, USA. [(abstract)](http://www.amstat.org/meetings/jsm/2014/onlineprogram/AbstractDetails.cfm?abstractid=311965)
 
 Tennekes, M., Offermans, M. (2014) Daytime Population Estimations Based on Mobile Phone Metadata. Presentation for the 2014 Joint Statistical Meeting (JSM), Boston, USA. [(abstract)](http://www.amstat.org/meetings/jsm/2014/onlineprogram/AbstractDetails.cfm?abstractid=311959) [(presentation)](downloads/presentations/DTP_Martijn_Tennekes_JSM2014.pdf)
 
 Tennekes, M. (2014) Visualization and Big Data in Official Statistics. Presentation for the International Seminar on Big Data 2014, organized by Infotec, CIDE, and INEGI, Mexico City, Mexico. [(presentation)](downloads/presentations/BigData_Martijn_Tennekes_Mexico2014.pdf) [(video)](http://www.youtube.com/watch?v=t1To4I5oCrk)
-																																											
-Braaksma, B., Daas, P., Offermans, M., Puts, M., Tennekes, M. (2014) Big Data and official statistics: local experiences and international initiatives, Proceedings of the 47th Scientific Meeting of the Italian Statistical Society (SIS), Cagliari, Italy. [(paper)](downloads/publications/SIS2014_Braaksma.pdf)
+																																											Braaksma, B., Daas, P., Offermans, M., Puts, M., Tennekes, M. (2014) Big Data and official statistics: local experiences and international initiatives, Proceedings of the 47th Scientific Meeting of the Italian Statistical Society (SIS), Cagliari, Italy. [(paper)](downloads/publications/SIS2014_Braaksma.pdf)
 
 ## 2013
-Tennekes,M., Jonge, E. de (2013) Poster: Hierarchical Qualitative Color Palettes. IEEE VisWeek 2013. Atlanta, USA. (downloads/publications/hiercolor_infovis2013.pdf) [(poster)](downloads/presentations/poster_hiercols_infovis2013.pdf)
+Tennekes,M., Jonge, E. de (2013) Poster: Hierarchical Qualitative Color Palettes. IEEE VisWeek 2013. Atlanta, USA. [(paper)](downloads/publications/hiercolor_infovis2013.pdf) [(poster)](downloads/presentations/poster_hiercols_infovis2013.pdf)
 
 Tennekes, M., Jonge, E. de (2013) Big data exploration with tabplot. Presentation for the R User Conference 2013, Albacete, Spain. [(abstract)](downloads/publications/useR2013_tabplot.pdf) [(presentation)](downloads/presentations/tabplot_user2013.pdf)
 
