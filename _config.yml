@@ -16,7 +16,7 @@
 title: Martijn Tennekes
 email: mtennekes@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal page of Martijn Tennekes.
+  List of publications, publications, and software
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: mtennekes
