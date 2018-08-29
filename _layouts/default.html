@@ -25,7 +25,10 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      <h2 class="project-tagline"><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/github.svg' | relative_url }}"></use></svg>GitHub</a></h2>
+      
+      <h2 class="project-tagline"><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><?php include("/assets/github.svg"); ?>GitHub</a></h2>
+      
+      <h2 class="project-tagline"><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/github.svg' }}"></use></svg>GitHub</a></h2>
       <h2 class="project-tagline"><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/linkedin.svg' | relative_url }}"></use></svg>LinkedIn</a></h2>
 
       {% if site.github.is_project_page %}
