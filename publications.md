@@ -14,14 +14,16 @@ Tennekes, M. (2018) tmap: Thematic Maps. [(R package version 2.1-1)](http://cran
 
 Tennekes, M. (2018) tmaptools: Thematic Maps Tools. [(R package version 2.0-1)](http://cran.r-project.org/package=tmaptools) [(project home)](https://github.com/mtennekes/tmaptools)
 
-Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.3, Proposed Elements for a Methodological Framework for the 
+Salgado, D., Alexandru, C. Debusschere, M., Esteban, E., Nurmi, O., Oancea, B., Piela, P., Radini, R., Sakarovitch, B., Saldaña, S., Sanguiao, L., Tennekes, M., Williams, W., Zwick, M. (2018) Estimation of population counts combining official and mobile phone data. Paper for the European Conference on Quality in Official Statistics 2018, Krakow, Poland. [(paper)](downloads/publications/Session 32_David Salgado_paper.pdf)
+
+Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M., Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.3, Proposed Elements for a Methodological Framework for the 
 Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.3_Final.pdf)
 
-Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.4, Some IT elements for the use of mobile phone data in the production of official statistics, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.4_Final.pdf)
+Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M., Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.4, Some IT elements for the use of mobile phone data in the production of official statistics, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.4_Final.pdf)
 
-Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M, Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.5, Some Quality Aspects and Future Prospects for the Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.5_Final.pdf)
+Salgado, D., Debusschere, M., Nurmi, O. Piela, P., Coudin, E., Sakarovitch, B., Hadam, S., Zwick, M., Radini, R., Tuoto, T., Tennekes, M., Alexandru, C., Oancea, B., Esteban, E., Saldaña, S., Sanguiao, L., Williams, W. (2018) ESSnet Big Data, WP5, Deliverable 5.5, Some Quality Aspects and Future Prospects for the Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](downloads/publications/WP5_Deliverable_5.5_Final.pdf)
 
-Tennekes, M. (2018) tmap: Thematic Maps in R, Journal of Statistical Software, 84(6), 1-39 [(paper)](https://doi.org/10.18637/jss.v084.i06)
+Tennekes, M. (2018) tmap: Thematic Maps in R, Journal of Statistical Software, 84(6), 1-39 [(link)](https://doi.org/10.18637/jss.v084.i06)
 
 ## 2017
 	
@@ -106,7 +108,7 @@ Derks, J.J.M. and Tennekes, M. (2011) Payoff functions in the one-way flow model
 
 Tennekes, M. (2009) Network formation games. Dissertation. [(thesis)](downloads/publications/Thesis-Martijn_Tennekes.pdf) [(statements, in Dutch)](downloads/publications/Stellingen-Martijn_Tennekes.pdf) [(PhD defense presentation slides, in Dutch)](downloads/presentations/verdediging.pdf)
 
-Derks, J.J.M. and Tennekes, M. (2009) A note on the existence of Nash networks in one-way flow models. Economic Theory 41 (3), 515-522. [link](http://link.springer.com/article/10.1007%2Fs00199-008-0409-x)
+Derks, J.J.M. and Tennekes, M. (2009) A note on the existence of Nash networks in one-way flow models. Economic Theory 41 (3), 515-522. [(link)](http://link.springer.com/article/10.1007%2Fs00199-008-0409-x)
 
 Derks, J.J.M., Kuipers, J.,Tennekes, M., and Thuijsman, F. (2009) Existence of Nash networks in the one-way flow model of network formation. In Neogy S. K. et al. (eds.), Modeling, Computation and Optimization, World Scientific, Ch 2. [(paper)](downloads/publications/Nash_networks.pdf)
 
