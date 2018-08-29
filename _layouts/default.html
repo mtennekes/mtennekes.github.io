@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
 
     {% if site.google_analytics %}
@@ -18,37 +18,21 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    
   </head>
   <body>
-    <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      
-      <object data="/assets/github.svg" viewBox="0 0 100 100"></object>
-      
-      <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" style="display: block;">
-      <span></span><object data="/assets/github.svg" viewBox="0 0 100 100"></object>GitHub</span></a>
-      
-      <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" style="display: block;">
-      <span></span><object data="/assets/linkedin.svg" viewBox="0 0 100 100"></object>GitHub</span></a>
 
-      <h2></h2><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" style="display: block;">
-      <span></span><object data="/assets/github.svg" viewBox="0 0 100 100"></object>GitHub</span></a></h2>
+      <h2 class="project-tagline">
+      <a style="color:#ffffff" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg viewBox="0 0 24 24" style = "top: .25em;
+  position: relative;" height = "32px"><use xlink:href="{{ '/assets/github2.svg#linkedin' | relative_url }}"></use></svg> LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a style="color:#ffffff" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg viewBox="0 0 27 27" style = "top: .25em;
+  position: relative;" height = "32px"><use xlink:href="{{ '/assets/github2.svg#github' | relative_url }}"></use></svg> GitHub</a></h2>
 
-      
-      <h2 class="project-tagline"><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/github2.svg#github' | relative_url}}"></use></svg>GitHub</a></h2>
-      <h2 class="project-tagline"><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/linkedin.svg' | relative_url }}"></use></svg>LinkedIn</a></h2>
-      <h2 class="project-tagline"><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>LinkedIn2</a></h2>
-
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
     </header>
 
     <main id="content" class="main-content" role="main">
