@@ -9,7 +9,7 @@ title: Martijn Tennekes
 
 ## 2018
 
-Meulemans, W., Tennekes, M. (2018) *Assessing Dot-Map Aggregations.* Poster paper to be presented at the IEEE VisWeek 2018. Berlin, Germany. [(paper)](downloads/publications/dotmapaggregation-visposter-2018.pdf)
+Meulemans, W., Tennekes, M. (2018) *Assessing Dot-Map Aggregations.* Poster paper presented at the IEEE VIS 2018. Berlin, Germany. [(paper)](downloads/publications/dotmapaggregation-visposter-2018.pdf)[(poster)](downloads/presentations/poster_dotmaps2.pdf)
 
 Tennekes, M. (2018) *tmap: Thematic Maps.* [(R package version 2.1-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)
 
@@ -74,7 +74,7 @@ Tennekes, M. (2014) *Visualization and Big Data in Official Statistics.* Present
 
 ## 2013
 
-Tennekes,M., Jonge, E. de (2013) *Hierarchical Qualitative Color Palettes.* Poster presented at the IEEE VisWeek 2013. Atlanta, USA. [(paper)](downloads/publications/hiercolor_infovis2013.pdf) [(poster)](downloads/presentations/poster_hiercols_infovis2013.pdf)
+Tennekes,M., Jonge, E. de (2013) *Hierarchical Qualitative Color Palettes.* Poster presented at the IEEE VIS 2013. Atlanta, USA. [(paper)](downloads/publications/hiercolor_infovis2013.pdf) [(poster)](downloads/presentations/poster_hiercols_infovis2013.pdf)
 
 Tennekes, M., Jonge, E. de (2013) *Big data exploration with tabplot.* Presentation for the R User Conference 2013, Albacete, Spain. [(abstract)](downloads/publications/useR2013_tabplot.pdf) [(presentation)](downloads/presentations/tabplot_user2013.pdf)
 
@@ -105,7 +105,7 @@ Tennekes, M., Jonge, E. de (2011) *Top-down data analysis with treemaps.* Procee
 
 ## 2010
 
-Tennekes, M., Jonge, E. de (2010) *Application of Treemaps to Business Statistics Analysis.* Poster presented at the IEEE VisWeek 2010. Salt Lake City, USA. [(paper)](downloads/publications/poster_paper_infovis2010.pdf) [(poster)](downloads/presentations/Poster_Treemaps.pdf)
+Tennekes, M., Jonge, E. de (2010) *Application of Treemaps to Business Statistics Analysis.* Poster presented at the IEEE VIS 2010. Salt Lake City, USA. [(paper)](downloads/publications/poster_paper_infovis2010.pdf) [(poster)](downloads/presentations/Poster_Treemaps.pdf)
 
 Daas, P.J.H., Ossen, S., Tennekes, M. (2010) *Het meten van de kwaliteit van administratieve bronnen: recente resultaten en toekomstige ontwikkelingen.* In: Bakker, B.F.M., Kuijvenhoven, L. (eds), Registers in sociaalwetenschappelijk onderzoek, Statistics Netherlands, VU University Amsterdam. [(paper)](downloads/publications/Bakker1.pdf)
 
