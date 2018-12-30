@@ -8,7 +8,6 @@ permalink: /publications/
 ## 2019
 Puts, M. J. H., Daas, P. J. H., Tennekes, M., Blois, C. de (2019) Using huge amounts of road sensor data for official statistics, AIMS Mathematics, 4(1), 12-25 [(link)](http://www.aimspress.com/article/10.3934/Math.2019.1.12/fulltext.html)
 
-
 ## 2018
 
 Tennekes, M. (2018) Aggregation of dots. Paper presented at the seminar Methods for Big Data in Official Statistics, Heerlen, The Netherlands. [(paper)](downloads/publications/Paper_M_Tennekes_Aggregation_of_dots.pdf) [(presentation)](downloads/presentations/methods_for_big_data_dotmap_2018.pdf)
