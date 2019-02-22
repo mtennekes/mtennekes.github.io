@@ -1,6 +1,5 @@
 ---
 title: Publications
-permalink: /publications/
 ---
 	
 # Data Visualization and Big Data
