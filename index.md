@@ -63,7 +63,7 @@ Tennekes, M. (2015) High Frequency Road Sensor Data for Official Statistics. Pap
 						
 ## 2014
 
-Tennekes, M. Jonge, E. de (2014) Tree Colors: Color Schemes for Tree-Structured Data. IEEE Transactions on Visualization and Computer Graphics 20 (12), 2072 - 2081. (downloads/publications/TreeColors_manuscript.pdf) [(video preview)](downloads/presentations/TreeColors_video_preview.mp4) [(fast forward presentation)](downloads/presentations/TreeColors_ff_pres.mp4) [(presentation)](downloads/presentations/TreeColors_pres.pdf)
+Tennekes, M. Jonge, E. de (2014) Tree Colors: Color Schemes for Tree-Structured Data. IEEE Transactions on Visualization and Computer Graphics 20 (12), 2072 - 2081. [(paper)](downloads/publications/TreeColors_manuscript.pdf) [(video preview)](downloads/presentations/TreeColors_video_preview.mp4) [(fast forward presentation)](downloads/presentations/TreeColors_ff_pres.mp4) [(presentation)](downloads/presentations/TreeColors_pres.pdf)
 
 Offermans, M., Tennekes, M. (2014) Mobile Phone Metadata: A New Source for Official Statistics. Presentation for the 2014 Joint Statistical Meeting (JSM), Boston, USA. [(abstract)](http://www.amstat.org/meetings/jsm/2014/onlineprogram/AbstractDetails.cfm?abstractid=311965)
 
