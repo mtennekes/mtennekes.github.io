@@ -5,6 +5,9 @@ title: Publications
 # Data Visualization and Big Data
 
 ## 2019
+
+Tennekes, M. Creating thematic maps in R. Workshop at the OpenGeoHUB Summer School, Muenster, Germany. [(presentation)](downloads/presentations/tmap_opengeo_muenster.pdf)
+
 Ricciato, F., Wirthmann, A, Tennekes, M. Sakarovitch, B., Radini, R, Salgado, D. (2019) Towards a Reference Methodological Framework for processing Mobile Network Operator data for Official Statistics. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob_v2.pdf) [(poster)](downloads/presentations/poster_netmob_RMF.pdf)
 
 Ponsen, M., Gootzen, Y., Puts, M., Tennekes, M., Jonge, E. de, Shah, S., Offermans, M. (2019) Towards Official Tourism Statistics - machine learning for processing signalling data. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob19_paper_49.pdf) [(poster)](downloads/presentations/poster_netmob_Gootzen.pdf)
