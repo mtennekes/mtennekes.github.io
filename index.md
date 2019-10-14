@@ -5,6 +5,7 @@ title: Publications
 # Data Visualization and Big Data
 
 ## 2019
+
 Ricciato, F., Wirthmann, A, Tennekes, M. Sakarovitch, B., Radini, R, Salgado, D. (2019) Towards a Reference Methodological Framework for processing Mobile Network Operator data for Official Statistics. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob_v2.pdf) [(poster)](downloads/presentations/poster_netmob_RMF.pdf)
 
 Ponsen, M., Gootzen, Y., Puts, M., Tennekes, M., Jonge, E. de, Shah, S., Offermans, M. (2019) Towards Official Tourism Statistics - machine learning for processing signalling data. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob19_paper_49.pdf) [(poster)](downloads/presentations/poster_netmob_Gootzen.pdf)
@@ -60,10 +61,12 @@ Tennekes, M. (2016) On the visualization of hierarchical, tabular and spatial da
 Tennekes, M. (2015) tmap: creating thematic maps in a flexible way. Presentation for the R User Conference 2015, Aalborg, Denmark. [(abstract)](downloads/publications/useR2015_tmap.pdf) [(presentation)](downloads/presentations/tmap_user2015.pdf)
 
 Tennekes, M. (2015) Data Visualization in Official Statistics. Presentation for invited workshop Data Meets Viz. University of Augsbourg, Germany. [(presentation)](downloads/presentations/DataVis_OfficialStatistics.pdf)
-																																				
+
 Tennekes, M. (2015) High Frequency Road Sensor Data for Official Statistics. Paper presented at the 2015 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(paper)](downloads/publications/road_sensors1_NTTS2015.pdf) [(presentation)](downloads/presentations/road_sensors1_slides_NTTS2015.pdf) [(video, from 7:54:30 to 8:05:30)](https://scic.ec.europa.eu/streaming/index.php?es=2&sessionno=89d3d7800304002cd469f0c402bd3ea0)
-																																				Tennekes, M., Puts, M. (2015) Projection of road sensors to the Dutch road network. Paper presented at the 2015 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(paper)](downloads/publications/road_sensors2_NTTS2015.pdf) [(presentation)](downloads/presentations/road_sensors2_slides_NTTS2015.pdf) [(video, from 8:05:30 to 8:15:35)](https://scic.ec.europa.eu/streaming/index.php?es=2&sessionno=89d3d7800304002cd469f0c402bd3ea0)
-																																				Puts, M., Tennekes, M., Daas, P. (2014) Using Road Sensor Data for Official Statistics. Towards a Big Data Methodology. Presentation for the Strata + Hadoop World, organized by O'Reilly and Cloudera, Barcelona, Spain. [(abstract)](downloads/publications/Strata2014_RoadSensors_abstract.pdf) [(presentation)](downloads/presentations/Strata2014_RoadSensors.pdf)
+
+Tennekes, M., Puts, M. (2015) Projection of road sensors to the Dutch road network. Paper presented at the 2015 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(paper)](downloads/publications/road_sensors2_NTTS2015.pdf) [(presentation)](downloads/presentations/road_sensors2_slides_NTTS2015.pdf) [(video, from 8:05:30 to 8:15:35)](https://scic.ec.europa.eu/streaming/index.php?es=2&sessionno=89d3d7800304002cd469f0c402bd3ea0)
+
+Puts, M., Tennekes, M., Daas, P. (2014) Using Road Sensor Data for Official Statistics. Towards a Big Data Methodology. Presentation for the Strata + Hadoop World, organized by O'Reilly and Cloudera, Barcelona, Spain. [(abstract)](downloads/publications/Strata2014_RoadSensors_abstract.pdf) [(presentation)](downloads/presentations/Strata2014_RoadSensors.pdf)
 						
 ## 2014
 
@@ -74,21 +77,27 @@ Offermans, M., Tennekes, M. (2014) Mobile Phone Metadata: A New Source for Offic
 Tennekes, M., Offermans, M. (2014) Daytime Population Estimations Based on Mobile Phone Metadata. Presentation for the 2014 Joint Statistical Meeting (JSM), Boston, USA. [(abstract)](http://www.amstat.org/meetings/jsm/2014/onlineprogram/AbstractDetails.cfm?abstractid=311959) [(presentation)](downloads/presentations/DTP_Martijn_Tennekes_JSM2014.pdf)
 
 Tennekes, M. (2014) Visualization and Big Data in Official Statistics. Presentation for the International Seminar on Big Data 2014, organized by Infotec, CIDE, and INEGI, Mexico City, Mexico. [(presentation)](downloads/presentations/BigData_Martijn_Tennekes_Mexico2014.pdf) [(video)](http://www.youtube.com/watch?v=t1To4I5oCrk)
-																																				Braaksma, B., Daas, P., Offermans, M., Puts, M., Tennekes, M. (2014) Big Data and official statistics: local experiences and international initiatives, Proceedings of the 47th Scientific Meeting of the Italian Statistical Society (SIS), Cagliari, Italy. [(paper)](downloads/publications/SIS2014_Braaksma.pdf)
+
+Braaksma, B., Daas, P., Offermans, M., Puts, M., Tennekes, M. (2014) Big Data and official statistics: local experiences and international initiatives, Proceedings of the 47th Scientific Meeting of the Italian Statistical Society (SIS), Cagliari, Italy. [(paper)](downloads/publications/SIS2014_Braaksma.pdf)
 
 ## 2013
+
 Tennekes,M., Jonge, E. de (2013) Poster: Hierarchical Qualitative Color Palettes. IEEE VisWeek 2013. Atlanta, USA. [(paper)](downloads/publications/hiercolor_infovis2013.pdf) [(poster)](downloads/presentations/poster_hiercols_infovis2013.pdf)
 
 Tennekes, M., Jonge, E. de (2013) Big data exploration with tabplot. Presentation for the R User Conference 2013, Albacete, Spain. [(abstract)](downloads/publications/useR2013_tabplot.pdf) [(presentation)](downloads/presentations/tabplot_user2013.pdf)
 
 Daas, P., Tennekes, M., Ossen, S., Di Bella, G., Galiè, L., Laitila, T., Lennartsson, D., Nilsson, R., Wallgren, A., Wallgren, B. (2013) Guidelines on the usage of the prototype of the computerized version of QRCA, and Report on the overall evaluation results. Second deliverable of workpackage 8 of the BLUE Enterprise and Trade Statistics project, March 29. [(paper)](downloads/publications/BLUE-ETS_WP8_Del2.pdf)
-																																				Tennekes, M., Jonge, E. de (2013) On the exploration of high cardinality categorical data. Paper presented at the 2013 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(paper)](downloads/publications/NTTS-2013-Tableplot.pdf) [(presentation)](downloads/presentations/tableplot_NTTS2013.pdf)
-																																				Tennekes, M., Jonge, E. de, Daas, P.J.H. (2013) Visualizing and Inspecting Large Datasets with Tableplots, Journal of Data Science 11 (1), 43-58. [(paper)](http://www.jds-online.com/file_download/379/JDS-1108.pdf)
-																																				## 2012
+
+Tennekes, M., Jonge, E. de (2013) On the exploration of high cardinality categorical data. Paper presented at the 2013 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(paper)](downloads/publications/NTTS-2013-Tableplot.pdf) [(presentation)](downloads/presentations/tableplot_NTTS2013.pdf)
+
+Tennekes, M., Jonge, E. de, Daas, P.J.H. (2013) Visualizing and Inspecting Large Datasets with Tableplots, Journal of Data Science 11 (1), 43-58. [(paper)](http://www.jds-online.com/file_download/379/JDS-1108.pdf)
+
+## 2012
 Tennekes, M., Jonge, E. de, Daas, P.J.H. (2012) Innovative visual tools for data editing. Paper presented at the United Nations Economic Commission for Europe (UNECE) Work Session on Statistical Data Editing, 2012, Oslo, Norway. [(paper)](http://www.unece.org/fileadmin/DAM/stats/documents/ece/ces/ge.44/2012/30_Netherlands.pdf) [(presentation)](downloads/presentations/innovative_tools_CBS.pdf)
 
 Daas, P.J.H., Ossen, S.J.L., Tennekes, M., Burger, J. (2012) Evaluation and visualisation of the quality of administrative sources used for statistics. Paper for the European Conference on Quality in Official Statistics 2012, Athens, Greece. [(paper)](downloads/publications/Q2012_Session23_paper.pdf)
-																																				Daas, P.J.H., Schulte Nordholt, E. with the cooperation of Jonge, E. de, Tennekes, M. (2012) Complete dataset kleurrijk weergeven in één figuur. E-data &amp; Research 6 (4), 7. [(paper)](downloads/publications/Tableplots_edata.pdf)
+
+Daas, P.J.H., Schulte Nordholt, E. with the cooperation of Jonge, E. de, Tennekes, M. (2012) Complete dataset kleurrijk weergeven in één figuur. E-data &amp; Research 6 (4), 7. [(paper)](downloads/publications/Tableplots_edata.pdf)
 
 ## 2011
 
@@ -103,6 +112,7 @@ Tennekes, M., Jonge, E. de, Daas, P.J.H. (2011) Visual profiling of large statis
 Tennekes, M., Jonge, E. de (2011) Top-down data analysis with treemaps. Proceedings of the International Conference on Information Visualization Theory and Applications, IVAPP 2011, Algarve, Portugal. [(paper)](downloads/publications/Top-down_data_analysis_with_Treemaps.pdf) [(presentation)](downloads/presentations/IVAPP_treemaps.pdf)
 
 ## 2010
+
 Tennekes, M., Jonge, E. de (2010) Poster: Application of Treemaps to Business Statistics Analysis. IEEE VisWeek 2010. Salt Lake City, USA. [(paper)](downloads/publications/poster_paper_infovis2010.pdf) [(poster)](downloads/presentations/Poster_Treemaps.pdf)
 
 Daas, P.J.H., Ossen, S., Tennekes, M. (2010) Het meten van de kwaliteit van administratieve bronnen: recente resultaten en toekomstige ontwikkelingen. In: Bakker, B.F.M., Kuijvenhoven, L. (eds), Registers in sociaalwetenschappelijk onderzoek, Statistics Netherlands, VU University Amsterdam. [(paper)](downloads/publications/Bakker1.pdf)
