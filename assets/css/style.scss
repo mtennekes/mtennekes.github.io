@@ -2,12 +2,15 @@
 ---
 
 @import "{{ site.theme }}";
-span.pres {
-	color: #FF0000;
-} 
 span.paper {
-	color: #0000FF;
+	color: #000000;
+} 
+span.pres {
+	color: #333333;
+} 
+span.rep {
+	color: #666666;
 } 
 span.soft {
-	color: #00FF00;
+	color: #620075;
 } 
