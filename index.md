@@ -6,13 +6,21 @@ title: Publications
 
 ## 2019
 
-Tennekes, M. Creating thematic maps in R. Workshop at the OpenGeoHUB Summer School, Muenster, Germany. [(presentation)](downloads/presentations/tmap_opengeo_muenster.pdf)
+<span class = "pres">Tennekes, M. Mapping human population. Data science seminar at City, University of London. [(presentation)](downloads/presentations/mapping_human_population.pdf)</span>
 
-Ricciato, F., Wirthmann, A, Tennekes, M. Sakarovitch, B., Radini, R, Salgado, D. (2019) Towards a Reference Methodological Framework for processing Mobile Network Operator data for Official Statistics. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob_v2.pdf) [(poster)](downloads/presentations/poster_netmob_RMF.pdf)
+<span class = "pres">Tennekes, M. Creating thematic maps in R. Workshop at the OpenGeoHUB Summer School, Muenster, Germany. [(presentation)](downloads/presentations/tmap_opengeo_muenster.pdf)</span>
 
-Ponsen, M., Gootzen, Y., Puts, M., Tennekes, M., Jonge, E. de, Shah, S., Offermans, M. (2019) Towards Official Tourism Statistics - machine learning for processing signalling data. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob19_paper_49.pdf) [(poster)](downloads/presentations/poster_netmob_Gootzen.pdf)
+<span class = "soft">Tennekes, M., Jonge, E. de (2019) tabplot: Tableplot, a visualization of large statistical datasets. [(R package version 1.3-3)](http://cran.r-project.org/package=tabplot) [(project home)](https://github.com/mtennekes/tabplot)</span>
 
-Puts, M. J. H., Daas, P. J. H., Tennekes, M., Blois, C. de (2019) Using huge amounts of road sensor data for official statistics, AIMS Mathematics, 4(1), 12-25 [(link)](http://www.aimspress.com/article/10.3934/Math.2019.1.12/fulltext.html)
+<span class = "soft">Tennekes, M. (2019) tmap: Thematic Maps. [(R package version 2.3-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)</span>
+
+<span class = "soft">Tennekes, M. (2019) tmaptools: Thematic Maps Tools. [(R package version 2.0-2)](http://cran.r-project.org/package=tmaptools) [(project home)](https://github.com/mtennekes/tmaptools)</span>
+
+<span class = "pres">Ricciato, F., Wirthmann, A, Tennekes, M. Sakarovitch, B., Radini, R, Salgado, D. (2019) Towards a Reference Methodological Framework for processing Mobile Network Operator data for Official Statistics. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob_v2.pdf) [(poster)](downloads/presentations/poster_netmob_RMF.pdf)</span>
+
+<span class = "pres">Ponsen, M., Gootzen, Y., Puts, M., Tennekes, M., Jonge, E. de, Shah, S., Offermans, M. (2019) Towards Official Tourism Statistics - machine learning for processing signalling data. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob19_paper_49.pdf) [(poster)](downloads/presentations/poster_netmob_Gootzen.pdf)</span>
+
+<span class = "paper">Puts, M. J. H., Daas, P. J. H., Tennekes, M., Blois, C. de (2019) Using huge amounts of road sensor data for official statistics, AIMS Mathematics, 4(1), 12-25 [(link)](http://www.aimspress.com/article/10.3934/Math.2019.1.12/fulltext.html)</span>
 
 ## 2018
 
@@ -20,9 +28,6 @@ Tennekes, M. (2018) Aggregation of dots. Paper presented at the seminar Methods 
 
 Meulemans, W., Tennekes, M. (2018) Assessing Dot-Map Aggregations. Poster paper presented at the IEEE VisWeek 2018. Berlin, Germany. [(paper)](downloads/publications/dotmapaggregation-visposter-2018.pdf)
 
-Tennekes, M. (2018) tmap: Thematic Maps. [(R package version 2.1-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)
-
-Tennekes, M. (2018) tmaptools: Thematic Maps Tools. [(R package version 2.0-1)](http://cran.r-project.org/package=tmaptools) [(project home)](https://github.com/mtennekes/tmaptools)
 
 Salgado, D., Alexandru, C. Debusschere, M., Esteban, E., Nurmi, O., Oancea, B., Piela, P., Radini, R., Sakarovitch, B., Saldaña, S., Sanguiao, L., Tennekes, M., Williams, W., Zwick, M. (2018) Estimation of population counts combining official and mobile phone data. Paper for the European Conference on Quality in Official Statistics 2018, Krakow, Poland. [(paper)](downloads/publications/Session 32_David Salgado_paper.pdf)
 
@@ -39,13 +44,11 @@ Tennekes, M. (2018) tmap: Thematic Maps in R, Journal of Statistical Software, 8
 	
 Daas, P., Abbott, O., Alexandru, C., Bisioti, E., Chavdarov, V., Debusschere, M., Horvat, V., Museux, J-M., Reis, F., Ilves, M., Langsrud, O., Maslankowski, J., Portugal, A., Puts, M., Tennekes, M., Sanguiao, L., Six, M., Wu, D. (2017) Results of Workshop on: Important topics in the area of methodology, quality and IT when using big data for official statistics. Workpackage 8, ESSnet Big Data, Heerlen, The Netherlands. Version 19 June 2017. [(report)](downloads/publications/WP8_2017_04_25-26_Heerlen_Workshop_Report.pdf)
 
-Tennekes, M. Exploring and presenting maps with **tmap**. Presentation for the R User Conference (useR) 2017, Brussels, Belgium. [(abstract)](downloads/publications/abstract_tmap.pdf) [(presentation)](downloads/presentations/tmap_user2017.pdf)
+Tennekes, M. Exploring and presenting maps with tmap. Presentation for the R User Conference (useR) 2017, Brussels, Belgium. [(abstract)](downloads/publications/abstract_tmap.pdf) [(presentation)](downloads/presentations/tmap_user2017.pdf)
 
 Tennekes, M., Offermans, M. Heerschap, N. (2017) Determining an optimal time window for roaming data for tourism statistics. Paper presented at the NetMob 2017 conference, Milan, Italy. [(paper)](downloads/publications/paper_netmob2017.pdf) [(poster)](downloads/presentations/Poster_netmob2017_v2.pdf)
 
 Tennekes, M., Jonge, E. de (2017) The compositional dot map: a visualization of spatial data. Paper presented at the 2017 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(extended abstract)](downloads/publications/The_compositional_dot_map_NTTS2017.pdf) [(presentation)](downloads/presentations/dotmap_NTTS.pdf)
-
-Tennekes, M., Jonge, E. de (2017) tabplot: Tableplot, a visualization of large statistical datasets. [(R package version 1.3-1)](http://cran.r-project.org/package=tabplot) [(project home)](https://github.com/mtennekes/tabplot)
 
 Tennekes, M. (2017) treemap: Treemap visualization. [(R package version 2.4-2)](http://cran.r-project.org/package=treemap) [(project home)](https://github.com/mtennekes/treemap)
 
