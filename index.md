@@ -6,7 +6,7 @@ title: Publications
 
 ## 2019
 
-<span class = "pres">Tennekes, M. Mapping human population. Data science seminar at City, University of London. [(presentation)](downloads/presentations/mapping_human_population.pdf)</span>
+<span style = "color;blue;">Tennekes, M. Mapping human population. Data science seminar at City, University of London. [(presentation)](downloads/presentations/mapping_human_population.pdf)</span>
 
 <span class = "pres">Tennekes, M. Creating thematic maps in R. Workshop at the OpenGeoHUB Summer School, Muenster, Germany. [(presentation)](downloads/presentations/tmap_opengeo_muenster.pdf)</span>
 
