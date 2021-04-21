@@ -4,17 +4,38 @@ title: Publications
 	
 # Data Visualization and Big Data
 
+## 2021
+
+<span class = "working">Tennekes, M. Chen, M. Design Space of Origin-Destination Data Visualization. Forthcoming in Eurographics Conference on Visualization (EuroVis) 2021</span>
+
+<span class = "chapter">Daas, P.J.H., Schulte Nordholt, E., Tennekes, M., Ossen, S. Evaluation of the Quality of Administrative Data Used in the Dutch Virtual Census. In Young Chun, A. et al. (ed.) Administrative Records for Survey Methodology, 61-83. [(link)](https://www.wiley.com/en-us/Administrative+Records+for+Survey+Methodology-p-9781119272045)
+
+<span class = "pres">Tennekes, M. Visualization of Mobility. Presentation at the seminar Big Data Matters 3 - The need for timely statistics. [(presentation)](https://www.cbs.nl/-/media/innovatie/big-data-matters-3-presentaties/tennekes_visualization-of-mobility---big-data-matters-3.pdf)[(video)](https://www.cbs.nl/bigdatamatters)
+
+<span class = "soft">Lovelace, R., Tennekes, M. (2021) zonebuilder: Create and Explore Geographic Zoning Systems. [(R package version 0.0.1)](http://cran.r-project.org/package=zonebuilder) [(project home)](https://github.com/zonebuilders/zonebuilder)</span>
+
+<span class = "soft">Tennekes, M. (2021) tmap: Thematic Maps. [(R package version 3.3-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)</span>
+
+<span class = "soft">Tennekes, M. (2021) tmaptools: Thematic Maps Tools. [(R package version 3.1-1)](http://cran.r-project.org/package=tmaptools) [(project home)](https://github.com/mtennekes/tmaptools)</span>
+
+<span class = "working">Zhang, Y., Tennekes, M. Jong, T.J.A., Curier, L., Coecke, B., Chen, M. Using Simulation to Aid the Design and Optimization of Intelligent User Interfaces for Quality Assurance Processes in Machine Learning. Working paper. [(paper)](https://arxiv.org/pdf/2104.01129)</span>
+
+## 2020
+
+<span class = "rep">Statistics Netherlands. (2020) Estimating hourly population flows in the Netherlands, Report, Statistics Netherlands, Heerlen, The Netherlands. [(paper)](https://www.cbs.nl/-/media/cbs/over-ons/innovatie/estimating-hourly-population-flows-in-the-netherlands.pdf)</span>
+
+<span class = "pres">Tennekes, M. Visualization of origin-destination data
+& a generic zoning system for cities. Presentation at the seminar Big Data Matters. [(presentation)](downloads/presentations/Secondment_Martijn_Oxford.pdf)
+
+<span class = "working">Tennekes, M., Gootzen, Y.A.P.M., Shah, S.H. A Bayesian approach to location estimation of mobile devices from mobile network operator data. CBDS Working Paper 06-20. [(paper)](https://www.cbs.nl/-/media/_pdf/2020/22/cbds_working_paper_location_estimation.pdf)</span>
+
+<span class = "pres">Tennekes, M. Mapping human population. Seminars at University of London (City and King's College) and University of Leeds. [(presentation)](downloads/presentations/mapping_human_population.pdf)[(video)](https://mymedia.leeds.ac.uk/Mediasite/Showcase/default/Presentation/9cd108807cee4060b0509cef2d1346b71d/Desktop)</span>
+
 ## 2019
 
-<span class = "pres">Tennekes, M. Mapping human population. Seminars at University of London (City and King's College). [(presentation)](downloads/presentations/mapping_human_population.pdf)</span>
+<span class = "pres">Tennekes, M. Creating thematic maps in R. Workshop at the OpenGeoHUB Summer School, Muenster, Germany. [(presentation)](downloads/presentations/tmap_opengeo_muenster.pdf)[(video)](https://www.youtube.com/watch?v=krcRR98C2Z0)</span>
 
-<span class = "pres">Tennekes, M. Creating thematic maps in R. Workshop at the OpenGeoHUB Summer School, Muenster, Germany. [(presentation)](downloads/presentations/tmap_opengeo_muenster.pdf)</span>
-
-<span class = "soft">Tennekes, M., Jonge, E. de (2019) tabplot: Tableplot, a visualization of large statistical datasets. [(R package version 1.3-3)](http://cran.r-project.org/package=tabplot) [(project home)](https://github.com/mtennekes/tabplot)</span>
-
-<span class = "soft">Tennekes, M. (2019) tmap: Thematic Maps. [(R package version 2.3-1)](http://cran.r-project.org/package=tmap) [(project home)](https://github.com/mtennekes/tmap)</span>
-
-<span class = "soft">Tennekes, M. (2019) tmaptools: Thematic Maps Tools. [(R package version 2.0-2)](http://cran.r-project.org/package=tmaptools) [(project home)](https://github.com/mtennekes/tmaptools)</span>
+<span class = "soft">Tennekes, M., Jonge, E. de (2019) tabplot: Tableplot, a visualization of large statistical datasets. [(project home)](https://github.com/mtennekes/tabplot)</span>
 
 <span class = "pres">Ricciato, F., Wirthmann, A, Tennekes, M. Sakarovitch, B., Radini, R, Salgado, D. (2019) Towards a Reference Methodological Framework for processing Mobile Network Operator data for Official Statistics. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob_v2.pdf) [(poster)](downloads/presentations/poster_netmob_RMF.pdf)</span>
 
@@ -91,7 +112,7 @@ Production of Official Statistics with Mobile Phone Data, Eurostat. [(report)](d
 
 <span class = "pres">Tennekes, M., Jonge, E. de (2013) Big data exploration with tabplot. Presentation for the R User Conference 2013, Albacete, Spain. [(abstract)](downloads/publications/useR2013_tabplot.pdf) [(presentation)](downloads/presentations/tabplot_user2013.pdf)</span>
 
-<span class = "rep">Daas, P., Tennekes, M., Ossen, S., Di Bella, G., Galiè, L., Laitila, T., Lennartsson, D., Nilsson, R., Wallgren, A., Wallgren, B. (2013) Guidelines on the usage of the prototype of the computerized version of QRCA, and Report on the overall evaluation results. Second deliverable of workpackage 8 of the BLUE Enterprise and Trade Statistics project, March 29. [(paper)](downloads/publications/BLUE-ETS_WP8_Del2.pdf)</span>
+<span class = "rep">Daas, P.J.H., Tennekes, M., Ossen, S., Di Bella, G., Galiè, L., Laitila, T., Lennartsson, D., Nilsson, R., Wallgren, A., Wallgren, B. (2013) Guidelines on the usage of the prototype of the computerized version of QRCA, and Report on the overall evaluation results. Second deliverable of workpackage 8 of the BLUE Enterprise and Trade Statistics project, March 29. [(paper)](downloads/publications/BLUE-ETS_WP8_Del2.pdf)</span>
 
 <span class = "rep">Tennekes, M., Jonge, E. de (2013) On the exploration of high cardinality categorical data. Paper presented at the 2013 New Techniques and Technologies for Statistics (NTTS) conference, Brussels, Belgium. [(paper)](downloads/publications/NTTS-2013-Tableplot.pdf) [(presentation)](downloads/presentations/tableplot_NTTS2013.pdf)</span>
 
