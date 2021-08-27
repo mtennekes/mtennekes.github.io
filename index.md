@@ -6,9 +6,14 @@ title: Publications
 
 ## 2021
 
-<span class = "working">Tennekes, M. Chen, M. Design Space of Origin-Destination Data Visualization. Forthcoming in Eurographics Conference on Visualization (EuroVis) 2021</span>
+<span class = "working">Lovelace, R., Tennekes, M. Carlino, D. (2021) ClockBoard: a zoning system for urban analysis
+. In review. [(paper)](https://zonebuilders.github.io/zonebuilder/articles/paper.html)</span>
 
-<span class = "chapter">Daas, P.J.H., Schulte Nordholt, E., Tennekes, M., Ossen, S. Evaluation of the Quality of Administrative Data Used in the Dutch Virtual Census. In Young Chun, A. et al. (ed.) Administrative Records for Survey Methodology, 61-83. [(link)](https://www.wiley.com/en-us/Administrative+Records+for+Survey+Methodology-p-9781119272045)
+<span class = "paper">Tennekes, M. Chen, M. (2021) Design Space of Origin-Destination Data Visualization. Computer Graphics Forum 40(3), 323-334. [(paper)](http://diglib.eg.org/bitstream/handle/10.1111/cgf14310/v40i3pp323-334.pdf)[(appendix)](http://diglib.eg.org/bitstream/handle/10.1111/cgf14310/1047-file1.pdf)
+[(presentation-short)](https://www.youtube.com/watch?v=yvRjvmkP_IQ)[(presentation-long)](https://youtu.be/BANTOSyWsFI)
+</span>
+
+<span class = "chapter">Daas, P.J.H., Schulte Nordholt, E., Tennekes, M., Ossen, S. (2021) Evaluation of the Quality of Administrative Data Used in the Dutch Virtual Census. In Young Chun, A. et al. (ed.) Administrative Records for Survey Methodology, 61-83. [(link)](https://www.wiley.com/en-us/Administrative+Records+for+Survey+Methodology-p-9781119272045)
 
 <span class = "pres">Tennekes, M. Visualization of Mobility. Presentation at the seminar Big Data Matters 3 - The need for timely statistics. [(presentation)](https://www.cbs.nl/-/media/innovatie/big-data-matters-3-presentaties/tennekes_visualization-of-mobility---big-data-matters-3.pdf)[(video)](https://www.cbs.nl/bigdatamatters)
 

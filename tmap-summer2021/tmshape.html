@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Specifying spatial data | Elegant and informative maps with tmap</title>
+  <meta name="description" content="This is a book in progress about the tmap package." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Specifying spatial data | Elegant and informative maps with tmap" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a book in progress about the tmap package." />
+  <meta name="github-repo" content="mtennekes/tmap_book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Specifying spatial data | Elegant and informative maps with tmap" />
+  
+  <meta name="twitter:description" content="This is a book in progress about the tmap package." />
+  
+
+<meta name="author" content="Martijn Tennekes, Jakub Nowosad" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="nutshell.html"/>
+<link rel="next" href="layers.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/pymjs-1.3.2/pym.v1.js"></script>
+<script src="libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+<!-- a placeholder for a google analytics script -->
+<script>
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">tmap: elegant and effective thematic maps in R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-tmap"><i class="fa fa-check"></i><b>1.1</b> What is <strong>tmap</strong>?</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#thematic-maps"><i class="fa fa-check"></i><b>1.2</b> Thematic maps</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="geodata.html"><a href="geodata.html"><i class="fa fa-check"></i><b>2</b> Spatial data in R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="geodata.html"><a href="geodata.html#intro-geodata"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="geodata.html"><a href="geodata.html#data-models"><i class="fa fa-check"></i><b>2.2</b> Data models</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="geodata.html"><a href="geodata.html#vector-data-model"><i class="fa fa-check"></i><b>2.2.1</b> Vector data model</a></li>
+<li class="chapter" data-level="2.2.2" data-path="geodata.html"><a href="geodata.html#raster-data-model"><i class="fa fa-check"></i><b>2.2.2</b> Raster data model</a></li>
+<li class="chapter" data-level="2.2.3" data-path="geodata.html"><a href="geodata.html#spatial-data-cubes"><i class="fa fa-check"></i><b>2.2.3</b> Spatial data cubes</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="geodata.html"><a href="geodata.html#spatial-data-representations-in-r"><i class="fa fa-check"></i><b>2.3</b> Spatial data representations in R</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="geodata.html"><a href="geodata.html#the-sf-package"><i class="fa fa-check"></i><b>2.3.1</b> The sf package</a></li>
+<li class="chapter" data-level="2.3.2" data-path="geodata.html"><a href="geodata.html#the-stars-package"><i class="fa fa-check"></i><b>2.3.2</b> The stars package</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="geodata.html"><a href="geodata.html#crs"><i class="fa fa-check"></i><b>2.4</b> Map projections (CRS)</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="geodata.html"><a href="geodata.html#what-are-map-projections"><i class="fa fa-check"></i><b>2.4.1</b> What are map projections?</a></li>
+<li class="chapter" data-level="2.4.2" data-path="geodata.html"><a href="geodata.html#a-model-of-the-earth"><i class="fa fa-check"></i><b>2.4.2</b> A model of the Earth</a></li>
+<li class="chapter" data-level="2.4.3" data-path="geodata.html"><a href="geodata.html#platte-carrée-and-web-mercator"><i class="fa fa-check"></i><b>2.4.3</b> Platte Carrée and Web Mercator</a></li>
+<li class="chapter" data-level="2.4.4" data-path="geodata.html"><a href="geodata.html#types-of-map-projections"><i class="fa fa-check"></i><b>2.4.4</b> Types of map projections</a></li>
+<li class="chapter" data-level="2.4.5" data-path="geodata.html"><a href="geodata.html#which-projection-to-choose"><i class="fa fa-check"></i><b>2.4.5</b> Which projection to choose?</a></li>
+<li class="chapter" data-level="2.4.6" data-path="geodata.html"><a href="geodata.html#crs-in-r"><i class="fa fa-check"></i><b>2.4.6</b> CRS in R</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="nutshell.html"><a href="nutshell.html"><i class="fa fa-check"></i><b>3</b> <strong>tmap</strong> in a nutshell</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="nutshell.html"><a href="nutshell.html#shape-objects"><i class="fa fa-check"></i><b>3.1</b> Shape objects</a></li>
+<li class="chapter" data-level="3.2" data-path="nutshell.html"><a href="nutshell.html#quick-maps"><i class="fa fa-check"></i><b>3.2</b> Quick maps</a></li>
+<li class="chapter" data-level="3.3" data-path="nutshell.html"><a href="nutshell.html#regular-maps"><i class="fa fa-check"></i><b>3.3</b> Regular maps</a></li>
+<li class="chapter" data-level="3.4" data-path="nutshell.html"><a href="nutshell.html#map-modes"><i class="fa fa-check"></i><b>3.4</b> Map modes</a></li>
+<li class="chapter" data-level="3.5" data-path="nutshell.html"><a href="nutshell.html#sm-section"><i class="fa fa-check"></i><b>3.5</b> Small multiples</a></li>
+<li class="chapter" data-level="3.6" data-path="nutshell.html"><a href="nutshell.html#ani-section"><i class="fa fa-check"></i><b>3.6</b> Animations</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tmshape.html"><a href="tmshape.html"><i class="fa fa-check"></i><b>4</b> Specifying spatial data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tmshape.html"><a href="tmshape.html#shapes-and-layers"><i class="fa fa-check"></i><b>4.1</b> Shapes and layers</a></li>
+<li class="chapter" data-level="4.2" data-path="tmshape.html"><a href="tmshape.html#shapes-hierarchy"><i class="fa fa-check"></i><b>4.2</b> Shapes hierarchy</a></li>
+<li class="chapter" data-level="4.3" data-path="tmshape.html"><a href="tmshape.html#map-projection"><i class="fa fa-check"></i><b>4.3</b> Map projection</a></li>
+<li class="chapter" data-level="4.4" data-path="tmshape.html"><a href="tmshape.html#map-extent"><i class="fa fa-check"></i><b>4.4</b> Map extent</a></li>
+<li class="chapter" data-level="4.5" data-path="tmshape.html"><a href="tmshape.html#data-simplification"><i class="fa fa-check"></i><b>4.5</b> Data simplification</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="layers.html"><a href="layers.html"><i class="fa fa-check"></i><b>5</b> Layers</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="layers.html"><a href="layers.html#polygons"><i class="fa fa-check"></i><b>5.1</b> Polygons</a></li>
+<li class="chapter" data-level="5.2" data-path="layers.html"><a href="layers.html#symbols"><i class="fa fa-check"></i><b>5.2</b> Symbols</a></li>
+<li class="chapter" data-level="5.3" data-path="layers.html"><a href="layers.html#lines"><i class="fa fa-check"></i><b>5.3</b> Lines</a></li>
+<li class="chapter" data-level="5.4" data-path="layers.html"><a href="layers.html#text"><i class="fa fa-check"></i><b>5.4</b> Text</a></li>
+<li class="chapter" data-level="5.5" data-path="layers.html"><a href="layers.html#raster-layer"><i class="fa fa-check"></i><b>5.5</b> Raster</a></li>
+<li class="chapter" data-level="5.6" data-path="layers.html"><a href="layers.html#tile"><i class="fa fa-check"></i><b>5.6</b> Tile</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="visual-variables.html"><a href="visual-variables.html"><i class="fa fa-check"></i><b>6</b> Visual variables</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="visual-variables.html"><a href="visual-variables.html#colors"><i class="fa fa-check"></i><b>6.1</b> Colors</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="visual-variables.html"><a href="visual-variables.html#color-palettes"><i class="fa fa-check"></i><b>6.1.1</b> Color palettes</a></li>
+<li class="chapter" data-level="6.1.2" data-path="visual-variables.html"><a href="visual-variables.html#color-scale-styles"><i class="fa fa-check"></i><b>6.1.2</b> Color scale styles</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="visual-variables.html"><a href="visual-variables.html#sizes"><i class="fa fa-check"></i><b>6.2</b> Sizes</a></li>
+<li class="chapter" data-level="6.3" data-path="visual-variables.html"><a href="visual-variables.html#shapes"><i class="fa fa-check"></i><b>6.3</b> Shapes</a></li>
+<li class="chapter" data-level="6.4" data-path="visual-variables.html"><a href="visual-variables.html#mixing-visual-variables"><i class="fa fa-check"></i><b>6.4</b> Mixing visual variables</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="layout.html"><a href="layout.html"><i class="fa fa-check"></i><b>7</b> Layout</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="layout.html"><a href="layout.html#typography"><i class="fa fa-check"></i><b>7.1</b> Typography</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="layout.html"><a href="layout.html#font-families-and-faces"><i class="fa fa-check"></i><b>7.1.1</b> Font families and faces</a></li>
+<li class="chapter" data-level="7.1.2" data-path="layout.html"><a href="layout.html#fonts-available-in-tmap"><i class="fa fa-check"></i><b>7.1.2</b> Fonts available in <strong>tmap</strong></a></li>
+<li class="chapter" data-level="7.1.3" data-path="layout.html"><a href="layout.html#fonts-on-maps"><i class="fa fa-check"></i><b>7.1.3</b> Fonts on maps</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="layout.html"><a href="layout.html#attributes-layers"><i class="fa fa-check"></i><b>7.2</b> Attributes layers</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="layout.html"><a href="layout.html#grid-lines"><i class="fa fa-check"></i><b>7.2.1</b> Grid lines</a></li>
+<li class="chapter" data-level="7.2.2" data-path="layout.html"><a href="layout.html#scale-bar"><i class="fa fa-check"></i><b>7.2.2</b> Scale bar</a></li>
+<li class="chapter" data-level="7.2.3" data-path="layout.html"><a href="layout.html#north-arrow"><i class="fa fa-check"></i><b>7.2.3</b> North arrow</a></li>
+<li class="chapter" data-level="7.2.4" data-path="layout.html"><a href="layout.html#text-annotation"><i class="fa fa-check"></i><b>7.2.4</b> Text annotation</a></li>
+<li class="chapter" data-level="7.2.5" data-path="layout.html"><a href="layout.html#logo"><i class="fa fa-check"></i><b>7.2.5</b> Logo</a></li>
+<li class="chapter" data-level="7.2.6" data-path="layout.html"><a href="layout.html#axis-labels"><i class="fa fa-check"></i><b>7.2.6</b> Axis labels</a></li>
+<li class="chapter" data-level="7.2.7" data-path="layout.html"><a href="layout.html#minimap"><i class="fa fa-check"></i><b>7.2.7</b> Minimap</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="layout.html"><a href="layout.html#layout-elements"><i class="fa fa-check"></i><b>7.3</b> Layout elements</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="save.html"><a href="save.html"><i class="fa fa-check"></i><b>8</b> Save maps</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="save.html"><a href="save.html#raster-graphic-formats"><i class="fa fa-check"></i><b>8.1</b> Raster graphic formats</a></li>
+<li class="chapter" data-level="8.2" data-path="save.html"><a href="save.html#vector-graphic-formats"><i class="fa fa-check"></i><b>8.2</b> Vector graphic formats</a></li>
+<li class="chapter" data-level="8.3" data-path="save.html"><a href="save.html#interactive-format"><i class="fa fa-check"></i><b>8.3</b> Interactive format</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://mtennekes.github.io/">Martijn Tennekes</a></li>
+<li><a href="https://nowosad.github.io/">Jakub Nowosad</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Elegant and informative maps with <strong>tmap</strong></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tmshape" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Specifying spatial data</h1>
+<p>In order to plot spatial data, at least two aspects need to be specified: the spatial data object itself, and the plotting method(s).
+We will cover the former in this chapter.
+The latter will be discussed in the next chapters.</p>
+<div id="shapes-and-layers" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Shapes and layers</h2>
+<p>As described in Chapter <a href="geodata.html#geodata">2</a>, shape objects can be vector or raster data.
+We recommend <code>sf</code> objects for vector data and <code>stars</code> objects for raster data<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="tmshape.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmap)</span>
+<span id="cb23-2"><a href="tmshape.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb23-3"><a href="tmshape.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb23-4"><a href="tmshape.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stars)</span>
+<span id="cb23-5"><a href="tmshape.html#cb23-5" aria-hidden="true" tabindex="-1"></a>worldelevation <span class="ot">=</span> <span class="fu">read_stars</span>(<span class="st">&quot;data/worldelevation.tif&quot;</span>)</span>
+<span id="cb23-6"><a href="tmshape.html#cb23-6" aria-hidden="true" tabindex="-1"></a>worldvector <span class="ot">=</span> <span class="fu">read_sf</span>(<span class="st">&quot;data/worldvector.gpkg&quot;</span>)</span>
+<span id="cb23-7"><a href="tmshape.html#cb23-7" aria-hidden="true" tabindex="-1"></a>worldcities <span class="ot">=</span> <span class="fu">read_sf</span>(<span class="st">&quot;data/worldcities.gpkg&quot;</span>)</span></code></pre></div>
+<p>In <strong>tmap</strong>, a shape object needs to be defined with the function <code>tm_shape()</code>.
+When multiple shape objects are used, each has to be defined in a separate <code>tm_shape()</code> call.
+This is illustrated in the following example (Figure <a href="tmshape.html#fig:tmshape1">4.1</a>).</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="tmshape.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation) <span class="sc">+</span></span>
+<span id="cb24-2"><a href="tmshape.html#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>)) <span class="sc">+</span></span>
+<span id="cb24-3"><a href="tmshape.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldvector) <span class="sc">+</span></span>
+<span id="cb24-4"><a href="tmshape.html#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_borders</span>() <span class="sc">+</span></span>
+<span id="cb24-5"><a href="tmshape.html#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldcities) <span class="sc">+</span></span>
+<span id="cb24-6"><a href="tmshape.html#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_dots</span>() <span class="sc">+</span></span>
+<span id="cb24-7"><a href="tmshape.html#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_text</span>(<span class="st">&quot;name&quot;</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:tmshape1"></span>
+<img src="04-tm-shape_files/figure-html/tmshape1-1.png" alt="A map representing three shapes (worldelevation, worldvector, and worldcities) using four layers." width="672" />
+<p class="caption">
+FIGURE 4.1: A map representing three shapes (worldelevation, worldvector, and worldcities) using four layers.
+</p>
+</div>
+<p>In this example, we use three shapes: <code>worldelevation</code> which is a <code>stars</code> object containing an attribute called <code>"worldelevation.tif"</code>, <code>worldvector</code> which is an <code>sf</code> object with country borders, and <code>worldcities</code>, which is an <code>sf</code> object that contains metropolitan areas of at least 20 million inhabitants.</p>
+<p>Each <code>tm_shape()</code> function call is succeeded by one or more layer functions.
+In the example these are <code>tm_raster()</code>, <code>tm_borders()</code>, <code>tm_dots()</code> and <code>tm_text()</code>.
+We will describe layer functions in detail in the next chapter.
+For this chapter, it is sufficient to know that each layer function call defines how the spatial data specified with <code>tm_shape()</code> is plotted.</p>
+<p>Shape objects can be used to plot multiple layers.
+In the example, shape <code>worldcities</code> is used for two layers, <code>tm_dots()</code> and <code>tm_text()</code>.
+<!-- We recommend to indent the code for the layer functions, in order to see which layers use which shape objects. -->
+<!--to discuss--></p>
+</div>
+<div id="shapes-hierarchy" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Shapes hierarchy</h2>
+<p>The order of the <code>tm_shape()</code> functions’ calls is crucial.
+The first <code>tm_shape()</code>, known as the main shape, is not only shown below the following <em>shapes</em>, but also sets the projection and extent of the whole map.
+In Figure <a href="tmshape.html#fig:tmshape1">4.1</a>, the <code>worldelevation</code> object was used as the first <em>shape</em>, and thus the whole map has the projection and extent of this object.</p>
+<p>However, we can quickly change the main <em>shape</em> with the <code>is.master</code> argument.
+<!--change to is.main later-->
+In the following example, we set the <code>worldcities</code> object as the main <em>shape</em>, which limits the output map to the point locations in <code>worldcities</code> (Figure <a href="tmshape.html#fig:tmshape2">4.2</a>)<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="tmshape.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation) <span class="sc">+</span></span>
+<span id="cb25-2"><a href="tmshape.html#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>)) <span class="sc">+</span></span>
+<span id="cb25-3"><a href="tmshape.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldvector) <span class="sc">+</span></span>
+<span id="cb25-4"><a href="tmshape.html#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_borders</span>() <span class="sc">+</span></span>
+<span id="cb25-5"><a href="tmshape.html#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldcities, <span class="at">is.master =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb25-6"><a href="tmshape.html#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_dots</span>() <span class="sc">+</span></span>
+<span id="cb25-7"><a href="tmshape.html#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_text</span>(<span class="st">&quot;name&quot;</span>)</span>
+<span id="cb25-8"><a href="tmshape.html#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning in CPL_transform(x, crs, aoi, pipeline, reverse,</span></span>
+<span id="cb25-9"><a href="tmshape.html#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; desired_accuracy, : GDAL Error 1: PROJ: proj_as_wkt:</span></span>
+<span id="cb25-10"><a href="tmshape.html#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Unsupported conversion method: Equal Earth</span></span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:tmshape2"></span>
+<img src="04-tm-shape_files/figure-html/tmshape2-1.png" alt="A map representing three shapes (worldelevation, worldvector, and worldcities) using four layers and zoomed into the locations in the worldcities object." width="672" />
+<p class="caption">
+FIGURE 4.2: A map representing three shapes (worldelevation, worldvector, and worldcities) using four layers and zoomed into the locations in the worldcities object.
+</p>
+</div>
+<!-- should we mention inner.margins here or later?? -->
+</div>
+<div id="map-projection" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Map projection</h2>
+<p></p>
+<p>As we mentioned in the previous section, created maps use the projection from the main <em>shape</em>.
+However, we often want to create a map with a different projection, for example to preserve a specific map property (Chapter <a href="geodata.html#crs">2.4</a>).
+We can do this in two ways.
+The first way to use a different projection on a map is to reproject the main data before plotting, as shown in Section <a href="geodata.html#crs-in-r">2.4.6</a>.
+The second way is to specify the map projection using the <code>projection</code> argument of <code>tm_shape()</code>.
+This argument expects either some <code>crs</code> object or a CRS code.
+In the next example, we set <code>projection</code> to <code>8857</code>.
+This number represents EPSG 8857 of a projection called <a href="http://equal-earth.com/index.html">Equal Earth</a> <span class="citation">(<a href="#ref-savric_equal_2019" role="doc-biblioref">Šavrič, Patterson, and Jenny 2019</a>)</span>.
+The Equal Earth projection is an equal-area pseudocylindrical projection for world maps similar to the non-equal-area Robinson projection (Figure <a href="geodata.html#fig:crs-robin">2.10</a>).</p>
+<p>Reprojections of vector data are usually straightforward because each spatial coordinate is reprojected individually.
+However, reprojecting of raster data is more complex and requires using one of two approaches.
+The first approach (<code>raster.warp = TRUE</code>) applies raster warping, which is a name for two separate spatial operations: creation of a new regular raster object and computation of new pixel values through resampling (for more details read Chapter 6 of <span class="citation"><a href="#ref-lovelace2019geocomputation" role="doc-biblioref">Lovelace, Nowosad, and Muenchow</a> (<a href="#ref-lovelace2019geocomputation" role="doc-biblioref">2019</a>)</span>).
+This is the default option in <strong>tmap</strong>, however, it has some limitations.</p>
+<p>Figure <a href="tmshape.html#fig:tm-map-proj">4.3</a>:A shows the world elevation raster reprojected to Equal Earth.
+Some of you can quickly noticed that certain areas, such as parts of Antarctica, New Zealand, Alaska, and the Kamchatka Peninsula, are presented twice: with one version being largely distorted.
+Another limitation of <code>raster.warp = TRUE</code> is the use of the nearest neighbor resampling only - while it can be a proper method to use for categorical rasters, it can have some unintended consequences for continuous rasters (such as the <code>"worldelevation.tif"</code> data).</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="tmshape.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation, <span class="at">projection =</span> <span class="dv">8857</span>) <span class="sc">+</span></span>
+<span id="cb26-2"><a href="tmshape.html#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>)) </span></code></pre></div>
+<p>The second approach (<code>raster.warp = FALSE</code>) computes new coordinates for each raster cell keeping all of the original values and results in a curvilinear grid.
+This calculation could deform the shapes of original grid cells, and usually curvilinear grids take a longer time to plot<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>.</p>
+<p>Figure <a href="tmshape.html#fig:tm-map-proj">4.3</a>:B shows an example of the second approach, which gave a better result in this case without any spurious lands.
+However, creation of the B map takes about ten times longer than the A map.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="tmshape.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation, <span class="at">projection =</span> <span class="dv">8857</span>, <span class="at">raster.warp =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb27-2"><a href="tmshape.html#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>))</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:tm-map-proj"></span>
+<img src="04-tm-shape_files/figure-html/tm-map-proj-1.png" alt="Two elevation maps in the Equal Earth projection: (A) created using raster.warp = TRUE, (B) created using raster.warp = FALSE." width="672" />
+<p class="caption">
+FIGURE 4.3: Two elevation maps in the Equal Earth projection: (A) created using raster.warp = TRUE, (B) created using raster.warp = FALSE.
+</p>
+</div>
+<!-- add our recommendations -->
+<!-- about reprojecting first vs later - why and how -->
+</div>
+<div id="map-extent" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Map extent</h2>
+<p>Another important aspect of mapping, besides projection, is its extent - a portion of the area shown in a map.
+<!--add info about the bounding box term-->
+This is not an issue when the extent of our spatial data is the same as we want to show on a map.
+However, what should we do when the spatial data contains a larger region than we want to present?</p>
+<p>Again, we could take two routes.
+The first one is to preprocess our data before mapping - this can be done with vector clipping (e.g., <code>st_intersection()</code>) and raster cropping (e.g., <code>st_crop()</code>).
+We would recommend this approach if you plan to work on the smaller data in the other parts of the project.
+The second route is to specify the map extent in <strong>tmap</strong>.</p>
+<p><strong>tmap</strong> allows specifying map extent using three approaches.
+The first one is to specify minimum and maximum coordinates in the x and y directions that we want to represent.
+This can be done with a numeric vector of four values in the order of minimum x, minimum y, maximum x, and maximum y, where all of the coordinates need to be specified in the input data units^[This can also be done with the object of class <code>st_bbox</code> or a 2 by 2 matrix.
+In the following example, we limit our map extent to the rectangular area between x from -15 to 45 and y from 35 to 65 (Figure <a href="tmshape.html#fig:tbbox1">4.4</a>).
+<!-- mention tm_grid? --></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="tmshape.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation, <span class="at">bbox =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">65</span>)) <span class="sc">+</span></span>
+<span id="cb28-2"><a href="tmshape.html#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>))</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:tbbox1"></span>
+<img src="04-tm-shape_files/figure-html/tbbox1-1.png" alt="Global elevation data limited to the extent of the specified minimum and maximum coordinates." width="672" />
+<p class="caption">
+FIGURE 4.4: Global elevation data limited to the extent of the specified minimum and maximum coordinates.
+</p>
+</div>
+<p>The second approach allows setting the map extent based on a search query.
+In the code below, we limit the map extent to the area of <code>"Europe"</code> (Figure <a href="tmshape.html#fig:tbbox2">4.5</a>).
+This approach uses the OpenStreetMap tool called Nominatim to automatically generate minimum and maximum coordinates in the x and y directions based on the provided query.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="tmshape.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation, <span class="at">bbox =</span> <span class="st">&quot;Europe&quot;</span>) <span class="sc">+</span></span>
+<span id="cb29-2"><a href="tmshape.html#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>))</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:tbbox2"></span>
+<img src="04-tm-shape_files/figure-html/tbbox2-1.png" alt="Global elevation data limited to the extent specified with the 'Europe' query." width="672" />
+<p class="caption">
+FIGURE 4.5: Global elevation data limited to the extent specified with the ‘Europe’ query.
+</p>
+</div>
+<p>In the last approach, the map extent is based on another existing spatial object.
+Figure <a href="tmshape.html#fig:tbbox3">4.6</a> shows the elevation raster data (<code>worldelevation</code>) limited to the edge coordinates from <code>worldcities</code>.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="tmshape.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation, <span class="at">bbox =</span> worldcities) <span class="sc">+</span></span>
+<span id="cb30-2"><a href="tmshape.html#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>, <span class="at">palette =</span> <span class="fu">terrain.colors</span>(<span class="dv">8</span>))</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:tbbox3"></span>
+<img src="04-tm-shape_files/figure-html/tbbox3-1.png" alt="Global elevation data limited to the extent of the other spatial object." width="672" />
+<p class="caption">
+FIGURE 4.6: Global elevation data limited to the extent of the other spatial object.
+</p>
+</div>
+<!-- mention that legend related to the complete object -->
+<!-- ?bb -->
+<!-- explain some additional arguments of bb?? -->
+</div>
+<div id="data-simplification" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Data simplification</h2>
+<p>Geometries in spatial vector data consists of sets of coordinates (Section <a href="geodata.html#vector-data-model">2.2.1</a>).
+Spatial vector objects grow larger with more features to present and more details to show, and this also has an impact on time to render a map.
+<!-- also to consider - the level of generalization -->
+Figure <a href="tmshape.html#fig:vectordown">4.7</a>:A shows a map of countries from the <code>worldvector</code> object.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="tmshape.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldvector) <span class="sc">+</span></span>
+<span id="cb31-2"><a href="tmshape.html#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>()</span></code></pre></div>
+<p>This level of detail can be good for some maps, but sometimes the number of details can make reading the map harder.
+To show a simplified (smoother) version of vector data, we can use the <code>simplify</code> argument of <code>tm_shape()</code><a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>.
+It expects a numeric value from 0 to 1 - a proportion of vertices in the data to retain.
+In the example below, we set <code>simplify</code> to 0.05, which keeps 5% of vertices (Figure <a href="tmshape.html#fig:vectordown">4.7</a>:B).</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="tmshape.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldvector, <span class="at">simplify =</span> <span class="fl">0.05</span>) <span class="sc">+</span></span>
+<span id="cb32-2"><a href="tmshape.html#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>()</span></code></pre></div>
+<p>The process of simplification can also be more controlled.
+By default, the underlining algorithm (called the Visvalingam method, learn more at <a href="https://bost.ocks.org/mike/simplify/" class="uri">https://bost.ocks.org/mike/simplify/</a>), removes small features, such as islands in our case.
+This could have far-reaching consequences - in the process of simplification, we could remove some countries!
+To prevent the deletion of small features, we also need to set <code>keep.units</code> to <code>TRUE</code>.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="tmshape.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldvector, <span class="at">simplify =</span> <span class="fl">0.05</span>, <span class="at">keep.units =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb33-2"><a href="tmshape.html#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>()</span></code></pre></div>
+<p>Figure <a href="tmshape.html#fig:vectordown">4.7</a>:C shows the result of such an operation.
+Now, our map contains all of the countries from the original data, but in a simplified form.
+<code>keep.units = TRUE</code>, however, does not keep all of the subfeatures.
+In the case of one country consisting of many small polygons, only one is sure to be retained.
+For example, look at New Zealand, which is now only represented by Te Waipounamu (the South Island).
+To keep all of the spatial geometries (even the smallest of islands), we should also specify <code>keep.subunits</code> to <code>TRUE</code>.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="tmshape.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldvector, <span class="at">simplify =</span> <span class="fl">0.05</span>, <span class="at">keep.units =</span> <span class="cn">TRUE</span>, <span class="at">keep.subunits =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb34-2"><a href="tmshape.html#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>()</span></code></pre></div>
+<p>Figure <a href="tmshape.html#fig:vectordown">4.7</a>:D contains a simplified map, where each spatial geometry of the original map still exists, but in a less detailed form.</p>
+<div class="figure" style="text-align: center"><span id="fig:vectordown"></span>
+<img src="04-tm-shape_files/figure-html/vectordown-1.png" alt="A map of world's countries based on: (A) original data, (B) simplified data with 5% of vertices kept, (C) simplified data with 5% of vertices, and all features kept, (D) simplified data with 5% of vertices, all features, and all polygons kept." width="672" />
+<p class="caption">
+FIGURE 4.7: A map of world’s countries based on: (A) original data, (B) simplified data with 5% of vertices kept, (C) simplified data with 5% of vertices, and all features kept, (D) simplified data with 5% of vertices, all features, and all polygons kept.
+</p>
+</div>
+<p>All of the about vector simplification functions use the <code>ms_simplify()</code> from the <strong>rmapshaper</strong> package <!--add two citations: to mapshaper and rmapshaper-->.
+Therefore, you can customize the data simplification even further using other arguments of <code>ms_simplify()</code> (except for the arguments <code>input</code>, <code>keep</code>, <code>keep_shapes</code>, and <code>explode</code>).</p>
+<!-- 2/resolution -->
+<p>Raster data is represented by a grid of cells (Section <a href="geodata.html#raster-data-model">2.2.2</a>), and the number of cells impacts the time to render a map.
+Rasters with hundreds of cells will be plotted quickly, while rasters with hundreds of millions or billions of cells will take a lot of time (and RAM) to be shown.
+<!-- ... some info about screen resolution -->
+Therefore, the <strong>tmap</strong> package downsamples large rasters by default to be below 10,000,000 cells in the plot mode and 1,000,000 cells in the view mode.
+<!-- c(plot = 1e7, view = 1e6) -->
+This values can be adjusted with the <code>max.raster</code> argument of <code>tmap_options()</code>, which expects a named vector with two elements - <code>plot</code> and <code>view</code>.
+<!-- btw - downsampling cont vs cat -->
+<!-- when and why -->
+(Figure <a href="tmshape.html#fig:rasterdown">4.8</a>:A).</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="tmshape.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_options</span>(<span class="at">max.raster =</span> <span class="fu">c</span>(<span class="at">plot =</span> <span class="dv">5000</span>, <span class="at">view =</span> <span class="dv">2000</span>))</span>
+<span id="cb35-2"><a href="tmshape.html#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation) <span class="sc">+</span></span>
+<span id="cb35-3"><a href="tmshape.html#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>)</span></code></pre></div>
+<p>Raster downsampling can be also disabled with the <code>raster.downsample</code> argument of <code>tm_shape()</code> (Figure <a href="tmshape.html#fig:rasterdown">4.8</a>:B).</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="tmshape.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(worldelevation, <span class="at">raster.downsample =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb36-2"><a href="tmshape.html#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">&quot;worldelevation.tif&quot;</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:rasterdown"></span>
+<img src="04-tm-shape_files/figure-html/rasterdown-1.png" alt="(A) A raster map with the decreased resolution, (B) a raster map in the original resolution." width="672" />
+<p class="caption">
+FIGURE 4.8: (A) A raster map with the decreased resolution, (B) a raster map in the original resolution.
+</p>
+</div>
+<p>Any <strong>tmap</strong> options can be reset (set to default) with <code>tmap_options_reset()</code> (We explain <code>tmap_options()</code> in details in Chapter <a href="#options"><strong>??</strong></a>).</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="tmshape.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_options_reset</span>()</span></code></pre></div>
+<!-- is there anything important about tm_shape arguments that still is missing for the above text?? -->
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-lovelace2019geocomputation" class="csl-entry">
+Lovelace, R, J Nowosad, and J Muenchow. 2019. <em>Geocomputation with <span>R</span></em>. <span>Chapman and Hall/CRC Press</span>.
+</div>
+<div id="ref-savric_equal_2019" class="csl-entry">
+Šavrič, Bojan, Tom Patterson, and Bernhard Jenny. 2019. <span>“The <span>Equal Earth</span> Map Projection.”</span> <em>International Journal of Geographical Information Science</em> 33 (3): 454–65. <a href="https://doi.org/cs8v">https://doi.org/cs8v</a>.
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="6">
+<li id="fn6"><p>However, <strong>tmap</strong> also accepts other spatial objects, e.g., of <code>sp</code>, <code>raster</code>, and <code>terra</code> classes.<a href="tmshape.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>We will show how to adjust margins and text locations later in the book<a href="tmshape.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>For more details of the first approach see <code>?stars::st_warp()</code> and of the second approach see <code>?stars::st_transform()</code>.<a href="tmshape.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>Vector data simplification requires the <strong>rmapshaper</strong> package to be installed.<a href="tmshape.html#fnref9" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<script>
+/*
+Sorts the references alphabetically.
+Modified from code by Yvonne Aburrow.
+*/
+$(function(){
+    var elems = $('#refs').children('div').remove();
+    elems.sort(function (a, b) {
+        return $(b).children('p').html().toUpperCase() > $(a).children('p').html().toUpperCase() ? -1 : 1;
+    });
+    $('#refs').append(elems);
+})
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="nutshell.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="layers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/mtennekes/tmap_book/edit/master/04-tm-shape.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
