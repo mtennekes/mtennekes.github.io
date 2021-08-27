@@ -1,7 +1,7 @@
 --- 
 title: "Elegant and informative maps with **tmap**"
 author: "Martijn Tennekes, Jakub Nowosad"
-date: "Summer 2021"
+date: "2021-08-27"
 description: "This is a book in progress about the tmap package."
 knit: bookdown::render_book
 site: bookdown::bookdown_site
