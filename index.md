@@ -2,12 +2,16 @@
 title: Publications
 ---
 	
-# Data Visualization and Big Data
+# Data Visualization and Data Science
+
+## 2022
+
+<span class = "paper">Tennekes, M., Gootzen, Y.A.P.M. (2022) A Bayesian approach to location estimation of mobile devices from mobile network operator data. Forthcoming in Journal of Spatial Information Science.
+
+<span class = "paper">Lovelace, R., Tennekes, M. Carlino, D. (2022) ClockBoard: a zoning system for urban analysis. Journal of Spatial Information Science 24 (24), 63-85. [(paper)](https://eprints.whiterose.ac.uk/191232/1/749.pdf)</span>
+
 
 ## 2021
-
-<span class = "working">Lovelace, R., Tennekes, M. Carlino, D. (2021) ClockBoard: a zoning system for urban analysis
-. In review. [(paper)](https://zonebuilders.github.io/zonebuilder/articles/paper.html)</span>
 
 <span class = "paper">Tennekes, M. Chen, M. (2021) Design Space of Origin-Destination Data Visualization. Computer Graphics Forum 40(3), 323-334. [(paper)](http://diglib.eg.org/bitstream/handle/10.1111/cgf14310/v40i3pp323-334.pdf)[(appendix)](http://diglib.eg.org/bitstream/handle/10.1111/cgf14310/1047-file1.pdf)
 [(presentation-short)](https://www.youtube.com/watch?v=yvRjvmkP_IQ)[(presentation-long)](https://youtu.be/BANTOSyWsFI)
