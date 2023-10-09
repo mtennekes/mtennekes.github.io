@@ -34,7 +34,7 @@ title: Publications
 <span class = "rep">Statistics Netherlands. (2020) Estimating hourly population flows in the Netherlands, Report, Statistics Netherlands, Heerlen, The Netherlands. [(paper)](https://www.cbs.nl/-/media/cbs/over-ons/innovatie/estimating-hourly-population-flows-in-the-netherlands.pdf)</span>
 
 <span class = "pres">Tennekes, M. Visualization of origin-destination data
-& a generic zoning system for cities. Presentation at the seminar Big Data Matters. [(presentation)](downloads/presentations/Secondment_Martijn_Oxford.pdf)
+& a generic zoning system for cities. Presentation at the seminar Big Data Matters, Statistics Netherlands, Heerlen, The Netherlands. [(presentation)](downloads/presentations/Secondment_Martijn_Oxford.pdf)
 
 <span class = "working">Tennekes, M., Gootzen, Y.A.P.M., Shah, S.H. A Bayesian approach to location estimation of mobile devices from mobile network operator data. CBDS Working Paper 06-20. [(paper)](https://www.cbs.nl/-/media/_pdf/2020/22/cbds_working_paper_location_estimation.pdf)</span>
 
@@ -48,7 +48,7 @@ title: Publications
 
 <span class = "pres">Ricciato, F., Wirthmann, A, Tennekes, M. Sakarovitch, B., Radini, R, Salgado, D. (2019) Towards a Reference Methodological Framework for processing Mobile Network Operator data for Official Statistics. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob_v2.pdf) [(poster)](downloads/presentations/poster_netmob_RMF.pdf)</span>
 
-<span class = "pres">Ponsen, M., Gootzen, Y., Puts, M., Tennekes, M., Jonge, E. de, Shah, S., Offermans, M. (2019) Towards Official Tourism Statistics - machine learning for processing signalling data. Poster presented at the NetMob 2017 conference, Oxford, UK. [(abstract)](downloads/publications/netmob19_paper_49.pdf) [(poster)](downloads/presentations/poster_netmob_Gootzen.pdf)</span>
+<span class = "pres">Ponsen, M., Gootzen, Y., Puts, M., Tennekes, M., Jonge, E. de, Shah, S., Offermans, M. (2019) Towards Official Tourism Statistics - machine learning for processing signalling data. Poster presented at the NetMob 2019 conference, Oxford, UK. [(abstract)](downloads/publications/netmob19_paper_49.pdf) [(poster)](downloads/presentations/poster_netmob_Gootzen.pdf)</span>
 
 <span class = "paper">Puts, M. J. H., Daas, P. J. H., Tennekes, M., Blois, C. de (2019) Using huge amounts of road sensor data for official statistics, AIMS Mathematics, 4(1), 12-25 [(link)](http://www.aimspress.com/article/10.3934/Math.2019.1.12/fulltext.html)</span>
 
