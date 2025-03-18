@@ -1,0 +1,29 @@
+---
+title: "Martijn Tennekes"
+image: MartijnTennekes2024.jpg
+favicon: 10mapz.ico
+toc: false # disable table of contents for this page (if applicable)
+about: 
+  template: jolla 
+  links: # create buttons
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/martijn-tennekes-387202125/
+      target: _blank # opens link in a new browser tab
+    - icon: github
+      text: GitHub
+      href: https://github.com/mtennekes
+      target: _blank
+    - icon: envelope
+      text: Email
+      href: mailto:mtennekes@gmail.com
+---
+
+
+I am a data scientist specialized in data visualization, spatial data, and statistical computing. I work at the methodology department at [Statistics Netherlands](https://www.cbs.nl/en-gb/), where I do a mix of consultancy, teaching, and conducting applied academic research.
+
+My academic career started in knowledge engineering and game theory at Maastricht University. After completing my Ph.D. in 2010, I shifted my research focus to data science and visualization. I have collaborated extensively with other universities, including Eindhoven University, the University of Münster, and the University of Oxford.
+
+I am passionate about open-source software. I am the main author of several popular R packages, including [tmap](https://r-tmap.github.io/tmap/) and [cols4all](https://cols4all.github.io/cols4all-R/), which are widely used by researchers and data visualization professionals worldwide.
+
+In my free time, I enjoy playing [guitar](https://open.spotify.com/artist/1r0UM2CTI9nvqjsXN5ihNa), doing outdoor sports, and spending time with my family.

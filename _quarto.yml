@@ -1,0 +1,22 @@
+project:
+  type: website
+  
+website:
+  favicon: 10mapz.ico
+  title: "<span class='site-subtitle'>Martijn</span> Tennekes"
+  navbar:
+    logo: 10mapz3.png
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: true
+
+editor: visual
+
+execute:
+  freeze: auto
