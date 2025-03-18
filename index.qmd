@@ -19,7 +19,6 @@ about:
       href: mailto:mtennekes@gmail.com
 ---
 
-
 I am a data scientist specialized in data visualization, spatial data, and statistical computing. I work at the methodology department at [Statistics Netherlands](https://www.cbs.nl/en-gb/), where I do a mix of consultancy, teaching, and conducting applied academic research.
 
 My academic career started in knowledge engineering and game theory at Maastricht University. After completing my Ph.D. in 2010, I shifted my research focus to data science and visualization. I have collaborated extensively with other universities, including Eindhoven University, the University of Münster, and the University of Oxford.
