@@ -1,1 +1,23 @@
 /* css styles */
+
+.site-subtitle {
+  color: lightgray;
+}
+
+.justify-text {
+  text-align: left;
+  text-justify: inter-word; /* For better spacing in some browsers */
+}
+
+span.paper {
+	color: #000000;
+} 
+span.pres {
+	color: #444444;
+} 
+span.rep {
+	color: #444444;
+} 
+span.soft {
+	color: #444444;
+} 
