@@ -20,6 +20,9 @@ about:
 
 :::{.justify-text}
 
+## 2025
+
+<span class = "paper">Stoel, R., Snijkers, G., Tennekes, M., Jonge, E. de, Krol, N., Puts, M. J. H., Meertens, V., Hoogendoorn, D., Bongers, N., Boer, D. den. (2025) Statistical Information Communication: past insights, future innovations. New Techniques and Technologies for Statistics (NTTS) 2025 conference, Brussels, Belgium. [(paper)](downloads/publications/NTTS2025_Stoel_etal.pdf)</span>
 
 ## 2024
 
@@ -32,6 +35,9 @@ about:
 <span class = "paper">Jin, Y, De Jong, T. J. A., Tennekes, M., Chen, M. (2023) Radial Icicle Tree (RIT): Node Separation and Area Constancy. IEEE Transactions on Visualization and Computer Graphics 30 (1), 251-261. [(paper)](https://arxiv.org/pdf/2307.10481)</span>
 
 <span class = "paper">Tennekes, M. and Puts, M. J. H. (2023) cols4all: a color palette analysis tool. In EuroVis 2023 (Short Papers). The Eurographics Association. [(paper)](https://diglib.eg.org/server/api/core/bitstreams/74a93b33-066d-4826-92fb-169df2167d9d/content)</span>
+
+<span class = "rep">Tennekes, M., Jonge, E. de, Puts, M. J. H., Meertens, V., Stoel. R. (2023) Visualization and communication of statistics. New Techniques and Technologies for Statistics (NTTS) 2023 conference, Brussels, Belgium. [(paper)](downloads/publications/NTTS2023_Tennekes_etal.pdf)</span>
+
 
 ## 2022
 
