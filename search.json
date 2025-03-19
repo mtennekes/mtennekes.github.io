@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Martijn Tennekes\nI am a data scientist specialized in data visualization, spatial data, and statistical computing. I work for Statistics Netherlands, with a mix of consultancy, teaching, and doing applied academic research.\nwhere he has contributed to several international research projects and served as a course leader for training programs organized by the European Commission (Eurostat).\nAfter completing his Ph.D. in game theory at Maastricht University in 2010, he shifted his research focus to data science, in particular, data visualization, exploratory data analysis, and geospatial data. He has also collaborated extensively with other universities, including Eindhoven University, the University of Münster, and the University of Oxford.\nI am passionate about open-source software. I am the main author of several popular R packages, including tmap and cols4all, which are widely used by researchers and data visualization professionals worldwide.\n\n\n\n\n\nIn my free time, I enjoy playing guitar, doing outdoor sports, and spending time with my family."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Martijn Tennekes",
+    "section": "",
+    "text": "I am a data scientist specialized in data visualization, spatial data, and statistical computing. I work at the methodology department at Statistics Netherlands, where I do a mix of consultancy, teaching, and conducting applied academic research.\nMy academic career started in knowledge engineering and game theory at Maastricht University. After completing my Ph.D. in 2010, I shifted my research focus to data science and visualization. I have collaborated extensively with other universities, including Eindhoven University, the University of Münster, and the University of Oxford.\nI am passionate about open-source software. I am the main author of several popular R packages, including tmap and cols4all, which are widely used by researchers and data visualization professionals worldwide.\nIn my free time, I enjoy playing guitar, doing outdoor sports, and spending time with my family."
+  }
+]
