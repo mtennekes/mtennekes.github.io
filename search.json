@@ -126,10 +126,38 @@
     "text": "Derks, J., Kuipers, J., Tennekes, M. (2008) An axiomatic approach covering the two-way flow model of network formation. Technical report, Maastricht University, Department of Mathematics. (paper)\nDerks, J.J.M., Kuipers, J.,Tennekes, M., and Thuijsman, F. (2008) Local dynamics in network formation. Technical report, Maastricht University, Department of Mathematics. (paper)"
   },
   {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "tmap R package for drawing thematic maps.\n\n\n\n\n  \n\n\ncols4all R package for color palette exploration and analysis.\n\n\n\n\ntmaptools R package that offers a set of tool funtions for reading and processing spatial data. CRAN github\n\n\n\n\ntmap.cartogram R package for creating cartograms. Home CRAN github"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Martijn Tennekes",
     "section": "",
     "text": "I am a data scientist specialized in data visualization, spatial data, and statistical computing. I work at the methodology department at Statistics Netherlands, where I do a mix of consultancy, teaching, and conducting applied academic research.\nMy academic career started in knowledge engineering and game theory at Maastricht University. After completing my Ph.D. in 2010, I shifted my research focus to data science and visualization. I have collaborated extensively with other universities, including Eindhoven University, the University of Münster, and the University of Oxford.\nI am passionate about open-source software. I am the main author of several popular R packages, including tmap and cols4all, which are widely used by researchers and data visualization professionals worldwide.\nIn my free time, I enjoy playing guitar, doing outdoor sports, and spending time with my family."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Visual Exploration, Analysis, and Presentation of Spatial Data using the tmap Package. Organized by PRstats. Online 6-9 May 2025.\n\n\n\nThe use of R in Official Statistics: model based estimates. European Statistical Training Programme (ESTP). Organized by ICON and Statistics Netherlands."
+  },
+  {
+    "objectID": "teaching.html#upcoming",
+    "href": "teaching.html#upcoming",
+    "title": "Teaching",
+    "section": "",
+    "text": "Visual Exploration, Analysis, and Presentation of Spatial Data using the tmap Package. Organized by PRstats. Online 6-9 May 2025."
+  },
+  {
+    "objectID": "teaching.html#past",
+    "href": "teaching.html#past",
+    "title": "Teaching",
+    "section": "",
+    "text": "The use of R in Official Statistics: model based estimates. European Statistical Training Programme (ESTP). Organized by ICON and Statistics Netherlands."
   }
 ]
