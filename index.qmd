@@ -1,6 +1,6 @@
 ---
 title: "Martijn Tennekes"
-image: MartijnTennekes2024.jpg
+image: images/MartijnTennekes2024.jpg
 favicon: 10mapz.ico
 toc: false # disable table of contents for this page (if applicable)
 about: 

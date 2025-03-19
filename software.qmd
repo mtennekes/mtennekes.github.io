@@ -1,0 +1,55 @@
+---
+title: "Software"
+toc: false # disable table of contents for this page (if applicable)
+about: 
+  template: jolla 
+  links: # create buttons
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/martijn-tennekes-387202125/
+      target: _blank # opens link in a new browser tab
+    - icon: github
+      text: GitHub
+      href: https://github.com/mtennekes
+      target: _blank 
+    - icon: envelope
+      text: Email
+      href: mailto:mtennekes@gmail.com
+---
+
+::::: grid
+::: {.g-col-12 .g-col-md-2 .justify-text}
+<a href="https://r-tmap.github.io/tmap/">
+  <img src="images/logo_tmap.png" alt="tmap logo" style="max-width: 100%;">
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-10 .justify-text}
+[**tmap**](https://r-tmap.github.io/tmap/) R package for drawing thematic maps.
+:::
+:::::
+
+::::: grid
+::: {.g-col-12 .g-col-md-2 .justify-text}
+<a href="https://cols4all.github.io/cols4all-R/">
+  <img src="images/logo_cols4all.png" alt="cols4all logo" style="max-width: 100%;">
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-10 .justify-text}
+[**cols4all**](https://cols4all.github.io/cols4all-R/) R package for color palette exploration and analysis.
+:::
+:::::
+
+::::: grid
+::: {.g-col-12 .g-col-md-12 .justify-text}
+**tmaptools** R package that offers a set of tool funtions for reading and processing spatial data. [CRAN](https://cran.r-project.org/web/packages/tmaptools/index.html) [github](https://github.com/r-tmap/tmaptools)
+:::
+:::::
+
+::::: grid
+::: {.g-col-12 .g-col-md-12 .justify-text}
+**tmap.cartogram** R package for creating cartograms. [Home](https://r-tmap.github.io/tmap.cartogram/index.html)
+[CRAN](https://cran.r-project.org/web/packages/tmap.cartogram/index.html) [github](https://github.com/r-tmap/tmap.cartogram)
+:::
+:::::
