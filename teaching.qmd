@@ -20,9 +20,15 @@ about:
 ::: justify-text
 ## Upcoming
 
-[Visual Exploration, Analysis, and Presentation of Spatial Data using the **tmap** Package](https://www.prstats.org/course/visual-exploration-analysis-and-presentation-of-spatial-data-using-the-tmap-package-tmap01/). Organized by PRstats. Online 6-9 May 2025.
+[Introduction to Spatial Data visualisation and Mapping in R](https://www.prstats.org/course/free-introduction-to-spatial-data-visualisation-and-mapping-in-r-fmap01/). Organized by PRstats. Online 17 September 2025
+
+[Spatial Data Visualisation and Mapping using TMAP](https://www.prstats.org/course/spatial-data-visualisation-and-mapping-using-tmap-tmap02/). Organized by PRstats. Online 10-14 November 2025
+
+Geospatial Information in Statistics. European Statistical Training Programme (ESTP). Organized by ICON and Statistics Netherlands. To be scheduled in 2026.
 
 ## Past
+
+[Visual Exploration, Analysis, and Presentation of Spatial Data using the **tmap** Package](https://www.prstats.org/course/visual-exploration-analysis-and-presentation-of-spatial-data-using-the-tmap-package-tmap01/). Organized by PRstats. Online 6-9 May 2025.
 
 The use of R in Official Statistics: model based estimates. [European Statistical Training Programme (ESTP)](https://cros.ec.europa.eu/book-page/government-finance-statistics-and-excessive-deficit-procedure-part-i-and-part-ii-2025-3). Organized by ICON and Statistics Netherlands.
 
