@@ -26,3 +26,7 @@ editor: visual
 
 execute:
   freeze: auto
+
+resources:
+  - pop64_2025.html
+  - downloads/**
