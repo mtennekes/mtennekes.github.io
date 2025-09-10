@@ -27,7 +27,7 @@ about:
 
 ### R code
 
-```{r, eval = FALSE}
+```{r, engine= 'text'}
 library(tmap)
 library(tmap.mapgl)
 library(terra)
