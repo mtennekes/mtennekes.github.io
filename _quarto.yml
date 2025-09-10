@@ -13,6 +13,8 @@ website:
         text: Publications
       - href: software.qmd
         text: Software
+      - href: gallery.qmd
+        text: Gallery
       - href: teaching.qmd
         text: Teaching
 
