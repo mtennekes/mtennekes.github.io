@@ -31,4 +31,5 @@ execute:
 
 resources:
   - pop64_2025.html
+  - tk2025.html
   - downloads/**
