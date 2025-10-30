@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Software – Martijn Tennekes</title>
+<title>Gallery – Martijn Tennekes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,11 +103,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./software.html" aria-current="page"> 
+    <a class="nav-link" href="./software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gallery.html"> 
+    <a class="nav-link active" href="./gallery.html" aria-current="page"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
   <li class="nav-item">
@@ -130,39 +130,43 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-about-jolla">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Software</h1>
+<h1 class="title">Gallery</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-<div class="grid">
-<div class="g-col-12 g-col-md-2 justify-text">
-<p><a href="https://r-tmap.github.io/tmap/"> <img src="images/logo_tmap.png" alt="tmap logo" style="max-width: 100%;"> </a></p>
-</div>
-<div class="g-col-12 g-col-md-10 justify-text">
-<p><a href="https://r-tmap.github.io/tmap/"><strong>tmap</strong></a> R package for drawing thematic maps.</p>
-</div>
-</div>
-<div class="grid">
-<div class="g-col-12 g-col-md-2 justify-text">
-<p><a href="https://cols4all.github.io/cols4all-R/"> <img src="images/logo_cols4all.png" alt="cols4all logo" style="max-width: 100%;"> </a></p>
-</div>
-<div class="g-col-12 g-col-md-10 justify-text">
-<p><a href="https://cols4all.github.io/cols4all-R/"><strong>cols4all</strong></a> R package for color palette exploration and analysis.</p>
-</div>
-</div>
-<div class="grid">
-<div class="g-col-12 g-col-md-12 justify-text">
-<p><strong>tmaptools</strong> R package that offers a set of tool funtions for reading and processing spatial data. <a href="https://cran.r-project.org/web/packages/tmaptools/index.html">CRAN</a> <a href="https://github.com/r-tmap/tmaptools">github</a></p>
-</div>
-</div>
-<div class="grid">
-<div class="g-col-12 g-col-md-12 justify-text">
-<p><strong>tmap.cartogram</strong> R package for creating cartograms. <a href="https://r-tmap.github.io/tmap.cartogram/index.html">Home</a> <a href="https://cran.r-project.org/web/packages/tmap.cartogram/index.html">CRAN</a> <a href="https://github.com/r-tmap/tmap.cartogram">github</a></p>
-</div>
-</div>
+<section id="world-population" class="level2 justify-text">
+<h2 data-anchor-id="world-population">World population</h2>
+<ul>
+<li>Data source: <a href="https://hub.worldpop.org/geodata/summary?id=80031"><strong>global2</strong> from WorldPop</a></li>
+<li>Raw data contains population counts per (approximately) one squared kilometer.</li>
+<li>Aggregated to 64 km2, both for computational and practical reasons (otherwise it would be far too spiky).</li>
+<li>Used software: <a href="https://r-tmap.github.io/tmap.mapgl/articles/polygons3d">tmap.mapgl</a></li>
+</ul>
+<section id="r-code" class="level3">
+<h3 data-anchor-id="r-code">R code</h3>
+<pre><code>library(tmap)
+library(tmap.mapgl)
+library(terra)
+# downloaded from WorldPop
+# https://hub.worldpop.org/geodata/summary?id=80031
+x_1km = rast("~/Downloads/global_pop_2025_CN_1km_R2025A_UA_v1.tif")
+x_16km = terra::aggregate(x_1km, fact = 16, fun = sum, na.rm = TRUE)
+x_64km = terra::aggregate(x_16km, fact = 4, fun = sum, na.rm = TRUE)
+names(x_64km) = "pop"
+tm_shape(x_64km) + 
+  tm_polygons_3d(
+    height = "pop",
+    fill = "pop",
+    fill.scale = tm_scale_intervals(values = "-ocean.thermal", style = "kmeans"),
+    fill.legend = tm_legend_hide())</code></pre>
+<iframe src="https://10mapz.com/pop64_2025.html" width="100%" height="500px" style="border:none;">
+</iframe>
+<p>See <a href="https://10mapz.com/pop64_2025.html">full screen</a></p>
 
 
+</section>
+</section>
 </main> 
   <hr class="about-sep">
    <div class="about-links">

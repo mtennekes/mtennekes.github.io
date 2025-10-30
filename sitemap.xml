@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://10mapz.com/gallery.html</loc>
+    <lastmod>2025-10-30T21:47:46.426Z</lastmod>
+  </url>
+  <url>
     <loc>https://10mapz.com/teaching.html</loc>
-    <lastmod>2025-09-09T12:15:00.327Z</lastmod>
+    <lastmod>2025-10-30T21:47:46.452Z</lastmod>
   </url>
   <url>
     <loc>https://10mapz.com/index.html</loc>
-    <lastmod>2025-09-09T12:15:00.276Z</lastmod>
-  </url>
-  <url>
-    <loc>https://10mapz.com/publications.html</loc>
-    <lastmod>2025-09-09T12:15:00.327Z</lastmod>
+    <lastmod>2025-10-30T21:47:46.427Z</lastmod>
   </url>
   <url>
     <loc>https://10mapz.com/software.html</loc>
-    <lastmod>2025-09-09T12:15:00.327Z</lastmod>
+    <lastmod>2025-10-30T21:47:46.452Z</lastmod>
+  </url>
+  <url>
+    <loc>https://10mapz.com/publications.html</loc>
+    <lastmod>2025-10-30T21:47:46.452Z</lastmod>
   </url>
 </urlset>
