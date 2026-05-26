@@ -33,3 +33,5 @@ resources:
   - pop64_2025.html
   - tk2025.html
   - downloads/**
+  - tmap_course_interactive/**
+
