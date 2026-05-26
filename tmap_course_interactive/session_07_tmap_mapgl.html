@@ -274,6 +274,7 @@ Martijn Tennekes
 <li>Better performance for <strong>large datasets</strong> (GPU rendering; WebGL also exists in <code>"view"</code> via leafgl, but more restricted)</li>
 <li><strong>3D polygon extrusion</strong> with <code>tm_polygons_3d()</code> — Session 8</li>
 <li><strong>Globe CRS</strong> — no projection distortion for world maps</li>
+<li>Some basemaps are <strong>rendered in 3D</strong> (terrain, buildings)</li>
 </ul>
 <p>⚠️ Trade-offs:</p>
 <ul>
@@ -354,10 +355,9 @@ Martijn Tennekes
 <span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
 <span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(<span class="st">"well_being"</span>) <span class="sc">+</span></span>
 <span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_maplibre</span>(</span>
-<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">pitch =</span> <span class="dv">0</span>,           <span class="co"># camera pitch (0 = top-down, 60 = oblique)</span></span>
-<span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">bearing =</span> <span class="dv">0</span>,         <span class="co"># rotation angle in degrees</span></span>
-<span id="cb5-8"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">zoom =</span> <span class="dv">2</span>             <span class="co"># initial zoom level</span></span>
-<span id="cb5-9"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">pitch =</span> <span class="dv">0</span>,    <span class="co"># camera pitch (0 = top-down, 60 = oblique)</span></span>
+<span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">zoom =</span> <span class="dv">2</span>      <span class="co"># initial zoom level</span></span>
+<span id="cb5-8"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="background-maps-via-tmap_providers" class="slide level2">
