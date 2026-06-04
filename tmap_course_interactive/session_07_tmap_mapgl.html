@@ -278,8 +278,9 @@ Martijn Tennekes
 </ul>
 <p>⚠️ Trade-offs:</p>
 <ul>
-<li><code>"mapbox"</code> requires a free API key</li>
+<li>Layer blending (new feature tmap 4.4) cannot be supported</li>
 <li>Some tmap features behave slightly differently or are not yet supported</li>
+<li><code>"mapbox"</code> requires a free API key</li>
 </ul>
 </section></section>
 <section>
@@ -410,7 +411,7 @@ Martijn Tennekes
 <span id="cb8-3"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"employment_rate"</span>,</span>
 <span id="cb8-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill.scale =</span> <span class="fu">tm_scale_intervals</span>(<span class="at">style =</span> <span class="st">"kmeans"</span>),</span>
 <span id="cb8-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">hover =</span> <span class="st">"name"</span>,</span>
-<span id="cb8-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"employment_rate"</span>)</span>
+<span id="cb8-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="fu">tm_popup</span>(<span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"employment_rate"</span>))</span>
 <span id="cb8-7"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb8-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>);    tm   <span class="co"># Leaflet</span></span>
