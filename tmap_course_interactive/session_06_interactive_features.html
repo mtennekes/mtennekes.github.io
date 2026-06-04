@@ -266,21 +266,21 @@ Martijn Tennekes
 <h1>Popups</h1>
 
 </section>
-<section id="click-popups-with-popup.vars" class="slide level2">
-<h2>Click popups with <code>popup.vars</code></h2>
+<section id="click-popups-with-popup" class="slide level2">
+<h2>Click popups with <code>popup</code></h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
 <span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
 <span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
 <span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
-<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"HPI"</span>, <span class="st">"life_exp"</span>, <span class="st">"gdp_cap_est"</span>)</span>
+<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="fu">tm_popup</span>(<span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"HPI"</span>, <span class="st">"life_exp"</span>, <span class="st">"gdp_cap_est"</span>))</span>
 <span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Character vector of column names to show</li>
-<li><code>popup.vars = TRUE</code> → show <strong>all</strong> variables</li>
-<li><code>popup.vars = FALSE</code> → disable popups</li>
+<li><code>popup = TRUE</code> → default popup, show <strong>all</strong> variables</li>
+<li><code>popup = FALSE</code> → disable popups</li>
 </ul>
 </section>
 <section id="named-popup-variables" class="slide level2">
@@ -290,28 +290,14 @@ Martijn Tennekes
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
 <span id="cb6-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
 <span id="cb6-3"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
-<span id="cb6-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(</span>
-<span id="cb6-5"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Country"</span>            <span class="ot">=</span> <span class="st">"name"</span>,</span>
-<span id="cb6-6"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Happy Planet Index"</span> <span class="ot">=</span> <span class="st">"HPI"</span>,</span>
-<span id="cb6-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Life expectancy"</span>    <span class="ot">=</span> <span class="st">"life_exp"</span>,</span>
-<span id="cb6-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="st">"GDP per capita"</span>     <span class="ot">=</span> <span class="st">"gdp_cap_est"</span></span>
-<span id="cb6-9"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb6-10"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="combining-tooltips-and-popups" class="slide level2">
-<h2>Combining tooltips and popups</h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
-<span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World, <span class="at">id =</span> <span class="st">"name"</span>) <span class="sc">+</span></span>
-<span id="cb7-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
-<span id="cb7-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
-<span id="cb7-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">hover =</span> <span class="st">"name"</span>,</span>
-<span id="cb7-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(<span class="st">"Country"</span> <span class="ot">=</span> <span class="st">"name"</span>,</span>
-<span id="cb7-8"><a href="" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"HPI"</span>     <span class="ot">=</span> <span class="st">"HPI"</span>,</span>
-<span id="cb7-9"><a href="" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"GDP/cap"</span> <span class="ot">=</span> <span class="st">"gdp_cap_est"</span>)</span>
-<span id="cb7-10"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="fu">tm_popup</span>(</span>
+<span id="cb6-5"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">vars =</span> <span class="fu">c</span>(</span>
+<span id="cb6-6"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Happy Planet Index"</span> <span class="ot">=</span> <span class="st">"HPI"</span>,</span>
+<span id="cb6-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Life expectancy"</span>    <span class="ot">=</span> <span class="st">"life_exp"</span>,</span>
+<span id="cb6-8"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="st">"GDP per capita"</span>     <span class="ot">=</span> <span class="st">"gdp_cap_est"</span></span>
+<span id="cb6-9"><a href="" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb6-10"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"name"</span>)</span>
+<span id="cb6-11"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -325,11 +311,11 @@ Martijn Tennekes
 <p>It is passed to:</p>
 <ul>
 <li><code>label.format</code> argument of scale functions (<code>tm_scale_intervals()</code>, <code>tm_scale_continuous()</code>, …)</li>
-<li><code>popup.format</code> argument of layer functions</li>
+<li><code>format</code> argument of <code>tm_popup()</code></li>
 </ul>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># Reference:</span></span>
-<span id="cb8-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># https://r-tmap.github.io/tmap/reference/tm_label_format.html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># Reference:</span></span>
+<span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># https://r-tmap.github.io/tmap/reference/tm_label_format.html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="key-arguments" class="slide level2">
@@ -404,80 +390,81 @@ Martijn Tennekes
 <section id="label.format-prefix-and-separator" class="slide level2">
 <h2><code>label.format</code> — prefix and separator</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
-<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
-<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"gdp_cap_est"</span>,</span>
-<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill.scale =</span> <span class="fu">tm_scale_intervals</span>(</span>
-<span id="cb9-5"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="st">"kmeans"</span>, <span class="at">n =</span> <span class="dv">5</span>,</span>
-<span id="cb9-6"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">label.format =</span> <span class="fu">tm_label_format</span>(</span>
-<span id="cb9-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">prefix         =</span> <span class="st">"$"</span>,</span>
-<span id="cb9-8"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">text.separator =</span> <span class="st">"to"</span>,</span>
-<span id="cb9-9"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">digits         =</span> <span class="dv">0</span></span>
-<span id="cb9-10"><a href="" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb9-11"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb9-12"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
+<span id="cb8-3"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"gdp_cap_est"</span>,</span>
+<span id="cb8-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill.scale =</span> <span class="fu">tm_scale_intervals</span>(</span>
+<span id="cb8-5"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="st">"kmeans"</span>, <span class="at">n =</span> <span class="dv">5</span>,</span>
+<span id="cb8-6"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">label.format =</span> <span class="fu">tm_label_format</span>(</span>
+<span id="cb8-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">prefix         =</span> <span class="st">"$"</span>,</span>
+<span id="cb8-8"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">text.separator =</span> <span class="st">"to"</span>,</span>
+<span id="cb8-9"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">digits         =</span> <span class="dv">0</span></span>
+<span id="cb8-10"><a href="" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb8-11"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-12"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="label.format-abbreviating-large-numbers" class="slide level2">
 <h2><code>label.format</code> — abbreviating large numbers</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
-<span id="cb10-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>() <span class="sc">+</span></span>
-<span id="cb10-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(metro) <span class="sc">+</span></span>
-<span id="cb10-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_bubbles</span>(</span>
-<span id="cb10-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="st">"pop2020"</span>,</span>
-<span id="cb10-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">size.scale =</span> <span class="fu">tm_scale_continuous</span>(</span>
-<span id="cb10-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">label.format =</span> <span class="fu">tm_label_format</span>(<span class="at">big.num.abbr =</span> <span class="fu">c</span>(<span class="at">million =</span> <span class="dv">6</span>))</span>
-<span id="cb10-8"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-9"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>() <span class="sc">+</span></span>
+<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(metro) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_bubbles</span>(</span>
+<span id="cb9-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="st">"pop2020"</span>,</span>
+<span id="cb9-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">size.scale =</span> <span class="fu">tm_scale_continuous</span>(</span>
+<span id="cb9-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">label.format =</span> <span class="fu">tm_label_format</span>(<span class="at">big.num.abbr =</span> <span class="fu">c</span>(<span class="at">million =</span> <span class="dv">6</span>))</span>
+<span id="cb9-8"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-9"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="popup.format-per-column-formatting-in-view-mode" class="slide level2">
 <h2><code>popup.format</code> — per-column formatting in view mode</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
-<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
-<span id="cb11-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
-<span id="cb11-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
-<span id="cb11-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"HPI"</span>, <span class="st">"gdp_cap_est"</span>, <span class="st">"pop_est"</span>),</span>
-<span id="cb11-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.format =</span> <span class="fu">list</span>(</span>
-<span id="cb11-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">HPI         =</span> <span class="fu">tm_label_format</span>(<span class="at">digits =</span> <span class="dv">1</span>),</span>
-<span id="cb11-9"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">gdp_cap_est =</span> <span class="fu">tm_label_format</span>(<span class="at">prefix =</span> <span class="st">"$"</span>, <span class="at">big.num.abbr =</span> <span class="fu">c</span>(<span class="at">k =</span> <span class="dv">3</span>)),</span>
-<span id="cb11-10"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">pop_est     =</span> <span class="fu">tm_label_format</span>(</span>
-<span id="cb11-11"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">fun =</span> <span class="cf">function</span>(x) <span class="fu">paste</span>(<span class="st">"About"</span>, <span class="fu">round</span>(x<span class="sc">/</span><span class="fl">1e6</span>), <span class="st">"million"</span>))</span>
-<span id="cb11-12"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb11-13"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
+<span id="cb10-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
+<span id="cb10-5"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
+<span id="cb10-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"HPI"</span>, <span class="st">"gdp_cap_est"</span>, <span class="st">"pop_est"</span>),</span>
+<span id="cb10-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.format =</span> <span class="fu">list</span>(</span>
+<span id="cb10-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">HPI         =</span> <span class="fu">tm_label_format</span>(<span class="at">digits =</span> <span class="dv">1</span>),</span>
+<span id="cb10-9"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">gdp_cap_est =</span> <span class="fu">tm_label_format</span>(<span class="at">prefix =</span> <span class="st">"$"</span>, <span class="at">big.num.abbr =</span> <span class="fu">c</span>(<span class="at">k =</span> <span class="dv">3</span>)),</span>
+<span id="cb10-10"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">pop_est     =</span> <span class="fu">tm_label_format</span>(</span>
+<span id="cb10-11"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">fun =</span> <span class="cf">function</span>(x) <span class="fu">paste</span>(<span class="st">"About"</span>, <span class="fu">round</span>(x<span class="sc">/</span><span class="fl">1e6</span>), <span class="st">"million"</span>))</span>
+<span id="cb10-12"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-13"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="html-in-popups" class="slide level2">
 <h2>HTML in popups</h2>
 <p>Setting <code>html.escape = FALSE</code> allows raw HTML in popup values — for example, rendering numbers in italics:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a>World<span class="sc">$</span>HPI_fmt <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;i&gt;"</span>, <span class="fu">round</span>(World<span class="sc">$</span>HPI, <span class="dv">1</span>), <span class="st">"&lt;/i&gt;"</span>)</span>
-<span id="cb12-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
-<span id="cb12-4"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
-<span id="cb12-6"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
-<span id="cb12-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
-<span id="cb12-8"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"name"</span>,</span>
-<span id="cb12-9"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.vars =</span> <span class="fu">c</span>(<span class="st">"Country"</span> <span class="ot">=</span> <span class="st">"name"</span>, <span class="st">"HPI"</span> <span class="ot">=</span> <span class="st">"HPI_fmt"</span>),</span>
-<span id="cb12-10"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup.format =</span> <span class="fu">list</span>(</span>
-<span id="cb12-11"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">HPI_fmt =</span> <span class="fu">tm_label_format</span>(<span class="at">html.escape =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb12-12"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb12-13"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a>World<span class="sc">$</span>HPI_fmt <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;strong&gt;"</span>, <span class="fu">round</span>(World<span class="sc">$</span>HPI, <span class="dv">1</span>), <span class="st">"&lt;/strong&gt;"</span>)</span>
+<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
+<span id="cb11-4"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(World) <span class="sc">+</span></span>
+<span id="cb11-6"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(</span>
+<span id="cb11-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"HPI"</span>,</span>
+<span id="cb11-8"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"name"</span>,</span>
+<span id="cb11-9"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="fu">tm_popup</span>(</span>
+<span id="cb11-10"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"Country"</span> <span class="ot">=</span> <span class="st">"name"</span>, <span class="st">"HPI"</span> <span class="ot">=</span> <span class="st">"HPI_fmt"</span>),</span>
+<span id="cb11-11"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="fu">list</span>(</span>
+<span id="cb11-12"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="at">HPI_fmt =</span> <span class="fu">tm_label_format</span>(<span class="at">html.escape =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb11-13"><a href="" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb11-14"><a href="" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="recap" class="slide level2">
 <h2>Recap</h2>
 <ul>
 <li><code>id = "column"</code> → identifies features; hover is enabled automatically when <code>id</code> is set; use <code>hover = FALSE</code> to disable it, or <code>hover = "column"</code> to show a different column</li>
-<li><code>popup.vars = c(...)</code> → popup on click; named vector → friendly labels</li>
+<li><code>popup = tm_popup(...)</code> → popup on click</li>
 <li><code>tm_label_format()</code> controls number formatting in both legend labels and popups</li>
 <li>Key args: <code>digits</code>, <code>prefix</code>, <code>suffix</code>, <code>big.num.abbr</code>, <code>text.separator</code>, <code>interval.disjoint</code>, <code>html.escape</code></li>
 <li><code>label.format</code> → used inside <code>tm_scale_*()</code> for legend labels</li>
-<li><code>popup.format</code> → used inside layer functions for popup values</li>
+<li><code>format</code> → used inside <code>tm_popup()</code> for popup values</li>
 <li>Reference: <a href="https://r-tmap.github.io/tmap/reference/tm_label_format.html">tm_label_format</a></li>
 <li>Shiny integration with <code>id</code> is covered in <strong>Session 11</strong></li>
 </ul>
