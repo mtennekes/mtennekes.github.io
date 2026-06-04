@@ -305,8 +305,7 @@ Martijn Tennekes
 <ul>
 <li>Always set <code>tmap_mode()</code> <strong>before</strong> <code>shinyApp()</code> — not inside <code>server</code> or <code>renderTmap()</code></li>
 <li>It is not possible to switch modes from within a Shiny app</li>
-<li>Shiny integration is currently only implemented for <code>"view"</code> mode</li>
-<li>Support for <code>"maplibre"</code> and <code>"mapbox"</code> is planned</li>
+<li>Shiny integration is implemented for all modes, also maplibre and mapbox</li>
 </ul>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># ✅ correct</span></span>
@@ -400,6 +399,7 @@ Martijn Tennekes
 </tr>
 </tbody>
 </table>
+<p>These are Leaflet (<code>"view"</code> mode) specific</p>
 </section>
 <section id="the-id-argument-and-click-events" class="slide level2">
 <h2>The <code>id</code> argument and click events</h2>
