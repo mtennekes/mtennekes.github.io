@@ -4,7 +4,7 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "tmap R package for drawing thematic maps.\n\n\n\n\n  \n\n\ncols4all R package for color palette exploration and analysis.\n\n\n\n\ntmaptools R package that offers a set of tool funtions for reading and processing spatial data. CRAN github\n\n\n\n\ntmap.cartogram R package for creating cartograms. Home CRAN github"
+    "text": "tmap R package for drawing thematic maps.\n\n\n\n\n  \n\n\ncols4all R package for color palette exploration and analysis.\n\n\n\n\ntmapverse meta-package that attaches tmap and its extensions (tmap.glyphs, tmap.networks, tmap.cartogram, tmap.mapgl), together with supporting spatial packages and cols4all. CRAN github\n\n\n\n\ntmaptools R package that offers a set of tool funtions for reading and processing spatial data. CRAN github\n\n\n\n\ntmap.cartogram R package for creating cartograms. Home CRAN github\n\n\n\n\ntmap.glyphs R package that extends tmap with glyph-based layers for depicting multivariate data. CRAN github\n\n\n\n\ntmap.networks R package for visualizing networks with tmap, e.g. as edge and node layers on top of thematic maps. CRAN github\n\n\n\n\ntmap.mapgl R package that extends tmap with two new interactive modes, “mapbox” and “maplibre”, based on Mapbox GL JS and MapLibre GL JS. CRAN github\n\n\n\n\ntmap.sources R package that provides reproducible access to spatial data sources for use with tmap, including a PMTiles reader. CRAN github\n\n\n\n\ntreemap R package for treemap visualization. CRAN github"
   },
   {
     "objectID": "teaching.html",
