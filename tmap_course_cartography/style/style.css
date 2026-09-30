@@ -1,0 +1,43 @@
+/* style.css */
+
+/* ── Bordered table variant ─────────────────────────────────────────────── */
+.bordered-table-slide table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+.bordered-table-slide td {
+    border: 1px solid black !important;
+    padding: 8px;
+}
+.bordered-table-slide tr:first-child td {
+    font-weight: bold !important;
+}
+
+/* ── Smaller body text helper ───────────────────────────────────────────── */
+.smaller-body {
+  font-size: 0.7em;
+}
+
+/* ── Logo: right-aligned on the title slide ─────────────────────────────── */
+#title-slide .slide-logo {
+  left: unset !important;
+  right: 10px !important;
+}
+
+/* ── Image height constraint ────────────────────────────────────────────── */
+/*
+   For standalone figure slides, use {.r-stretch} on the image in the QMD
+   file — that is the correct Reveal.js mechanism (see below).
+   This rule only guards against runaway images on other slides.
+*/
+.reveal .slides section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Keep figures within the slide height ───────────────────────────────── */
+.reveal .slides section .cell-output-display img {
+  max-height: 560px;
+  object-fit: contain;
+}
