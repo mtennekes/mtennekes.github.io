@@ -20,6 +20,12 @@ about:
 
 :::{.justify-text}
 
+## 2026
+
+<span class = "paper">Meertens, V., Snijkers, G., Stoel, R. D., Tennekes, M., Krol, N., Bongers, N., Jonge, E. de, Puts, M. J. H. (2026) Past insights and future innovations in statistical communication design: Towards cognitive friendly statistics. Statistical Journal of the IAOS 42 (1), 170-182. [(paper)](https://journals.sagepub.com/doi/pdf/10.1177/18747655251414390?download=true)</span>
+
+<span class = "paper">Beecham, R., Tennekes, M., Wood, J. (2026) gridmappr: an R package for creating small multiple gridmap layouts. Environment and Planning B: Urban Analytics and City Science 53 (3), 487-493. [(paper)](https://journals.sagepub.com/doi/10.1177/23998083251374737)</span>
+
 ## 2025
 
 <span class = "paper">Stoel, R., Snijkers, G., Tennekes, M., Jonge, E. de, Krol, N., Puts, M. J. H., Meertens, V., Hoogendoorn, D., Bongers, N., Boer, D. den. (2025) Statistical Information Communication: past insights, future innovations. New Techniques and Technologies for Statistics (NTTS) 2025 conference, Brussels, Belgium. [(paper)](downloads/publications/NTTS2025_Stoel_etal.pdf)</span>
