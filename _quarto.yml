@@ -1,5 +1,11 @@
 project:
   type: website
+  resources:
+    - pop64_2025.html
+    - tk2025.html
+    - downloads/**
+    - tmap_course_interactive/**
+    - tmap_course_cartography/**
   
 website:
   favicon: 10mapz.ico
@@ -28,10 +34,3 @@ editor: visual
 
 execute:
   freeze: auto
-
-resources:
-  - pop64_2025.html
-  - tk2025.html
-  - downloads/**
-  - tmap_course_interactive/**
-  - tmap_course_cartography/**
